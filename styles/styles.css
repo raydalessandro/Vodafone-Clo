@@ -1308,3 +1308,438 @@ body {
     animation: whatsappPulse 3s ease-in-out infinite;
   }
 }
+
+/* Oak Tree - Footer Complete Styles */
+
+/* ===== FOOTER CLEAN v3 (Ispirato OttimoPiano) ===== */
+.site-footer {
+  position: relative;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d1616 40%, #4a1c1c 70%, #661a1a 100%);
+  color: #fff;
+  padding: 60px 24px 24px;
+  overflow: hidden;
+}
+
+/* Gradiente sottile top */
+.site-footer::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(230, 0, 0, .4), transparent);
+}
+
+/* Wave separator */
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 48px;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+}
+
+/* Header pulito */
+.footer-head {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 32px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.brand-lockup {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.brand-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #e60000;
+  box-shadow: 0 0 0 4px rgba(230, 0, 0, .2);
+}
+
+.brand-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.brand-sub {
+  color: rgba(255, 255, 255, .7);
+  font-size: .9rem;
+}
+
+/* CTA buttons clean */
+.footer-cta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.footer-cta .btn {
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: .6rem;
+  transition: .3s;
+  border: 2px solid transparent;
+}
+
+.footer-cta .btn-primary {
+  background: #e60000;
+  color: #fff;
+}
+
+.footer-cta .btn-primary:hover {
+  background: #b30000;
+  transform: translateY(-2px);
+}
+
+.footer-cta .btn-ghost {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .3);
+  color: #fff;
+}
+
+.footer-cta .btn-ghost:hover {
+  border-color: #e60000;
+  background: rgba(230, 0, 0, .1);
+}
+
+/* Grid semplice e pulita */
+.footer-grid {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 2fr 2fr 2fr 1.5fr;
+  margin-bottom: 40px;
+}
+
+/* Colonne clean */
+.ft-block {
+  position: relative;
+}
+
+.ft-block h4 {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.ft-block h4::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background: #e60000;
+  border-radius: 1px;
+}
+
+/* Link lista pulita */
+.ft-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ft-links li {
+  margin: 12px 0;
+}
+
+.ft-links a {
+  color: rgba(255, 255, 255, .8);
+  text-decoration: none;
+  transition: .3s;
+  font-size: 0.95rem;
+}
+
+.ft-links a:hover {
+  color: #e60000;
+  transform: translateX(4px);
+}
+
+/* Store location clean */
+.store {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, .08);
+  transition: .3s;
+}
+
+.store:last-child {
+  border-bottom: none;
+}
+
+.store:hover {
+  transform: translateX(4px);
+}
+
+.store svg {
+  width: 18px;
+  height: 18px;
+  color: #e60000;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.store strong {
+  color: #fff;
+  font-size: 0.95rem;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.store .chip {
+  display: inline-block;
+  font-size: .7rem;
+  font-weight: 600;
+  color: #e60000;
+  background: rgba(230, 0, 0, .15);
+  padding: 2px 8px;
+  border-radius: 12px;
+  margin-left: 8px;
+}
+
+.store small {
+  color: rgba(255, 255, 255, .6);
+  font-size: 0.85rem;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.store a {
+  color: #e60000;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.store a:hover {
+  text-decoration: underline;
+}
+
+.open-badge {
+  display: inline-block;
+  margin-left: 8px;
+  font-size: .7rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 12px;
+  color: #fff;
+  background: #22c55e;
+}
+
+.open-badge.closed {
+  background: #ef4444;
+}
+
+/* Contatti clean */
+.contact-row {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  transition: .3s;
+}
+
+.contact-item:hover {
+  transform: translateX(4px);
+}
+
+.contact-item svg {
+  width: 18px;
+  height: 18px;
+  color: #e60000;
+  flex-shrink: 0;
+}
+
+.contact-item a,
+.contact-item address {
+  color: rgba(255, 255, 255, .8);
+  text-decoration: none;
+  transition: .3s;
+  font-size: 0.95rem;
+}
+
+.contact-item:hover a,
+.contact-item:hover address {
+  color: #fff;
+}
+
+/* Social minimal */
+.socials {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.socials a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: rgba(255, 255, 255, .7);
+  text-decoration: none;
+  background: rgba(255, 255, 255, .05);
+  border: 1px solid rgba(255, 255, 255, .1);
+  transition: .3s;
+}
+
+.socials a:hover {
+  background: #e60000;
+  border-color: #e60000;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.socials a svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Bottom bar minimal */
+.footer-bottom {
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, .1);
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: rgba(255, 255, 255, .6);
+  font-size: .9rem;
+}
+
+.legal {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.legal a {
+  color: rgba(255, 255, 255, .6);
+  text-decoration: none;
+  transition: .3s;
+}
+
+.legal a:hover {
+  color: #e60000;
+}
+
+/* ===== RESPONSIVE FOOTER ===== */
+@media (max-width: 1024px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-footer {
+    padding: 40px 16px 20px;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .footer-head {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .footer-cta {
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .footer-cta .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .ft-block h4::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .store {
+    justify-content: center;
+    text-align: left;
+  }
+
+  .contact-row {
+    align-items: center;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .site-footer {
+    padding: 30px 12px 16px;
+  }
+  
+  .footer-head {
+    padding-bottom: 20px;
+    margin-bottom: 24px;
+  }
+  
+  .footer-grid {
+    gap: 20px;
+  }
+  
+  .ft-block {
+    padding: 0 8px;
+  }
+  }
