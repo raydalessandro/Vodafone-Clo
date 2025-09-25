@@ -32,10 +32,8 @@
   <!-- Preload LCP (hero) -->
   <link rel="preload" as="image" href="/images/hero/mesh-1600.webp" imagesrcset="/images/hero/mesh-800.webp 800w, /images/hero/mesh-1200.webp 1200w, /images/hero/mesh-1600.webp 1600w" imagesizes="(max-width: 768px) 100vw, 50vw">
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel="stylesheet" href="styles/responsive.css">
-  <link rel="stylesheet" href="styles/additional-styles.css">
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="css/styles.css">
 
   <!-- JSON-LD: Organization + LocalBusiness -->
   <script type="application/ld+json">
@@ -76,20 +74,20 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="/" class="logo">
-                <span>🌳</span>
-                <span>Oak Tree</span>
+                <span class="logo-icon">🌳</span>
+                <span class="logo-text">Oak Tree</span>
             </a>
             
             <ul class="nav-menu" id="navMenu">
-                <li><a href="privati.html" class="nav-link">Privati</a></li>
-                <li><a href="business.html" class="nav-link">Business</a></li>
-                <li><a href="servizi.html" class="nav-link">Servizi</a></li>
-                <li><a href="smartphone.html" class="nav-link">Smartphone</a></li>
-                <li><a href="chi-siamo.html" class="nav-link">Chi siamo</a></li>
-                <li><a href="blog.html" class="nav-link">Blog</a></li>
-                <li><a href="lavora.html" class="nav-link">Lavora con noi</a></li>
-                <li><a href="negozi.html" class="nav-link">I Nostri Negozi</a></li>
-                <li><a href="contatti.html" class="nav-link">Contatti</a></li>
+                <li><a href="/privati" class="nav-link">Privati</a></li>
+                <li><a href="/business" class="nav-link">Business</a></li>
+                <li><a href="/servizi" class="nav-link">Servizi</a></li>
+                <li><a href="/smartphone" class="nav-link">Smartphone</a></li>
+                <li><a href="/chi-siamo" class="nav-link">Chi siamo</a></li>
+                <li><a href="/blog" class="nav-link">Blog</a></li>
+                <li><a href="/lavora-con-noi" class="nav-link">Lavora con noi</a></li>
+                <li><a href="/negozi" class="nav-link">I Nostri Negozi</a></li>
+                <li><a href="/contatti" class="nav-link">Contatti</a></li>
             </ul>
             
             <div class="mobile-menu-btn" id="mobileMenuBtn" aria-controls="mobileMenu" aria-expanded="false">
@@ -101,15 +99,15 @@
         
         <div class="mobile-menu" id="mobileMenu">
             <div class="mobile-nav-links">
-                <a href="privati.html" class="nav-link">Privati & Famiglia</a>
-                <a href="business.html" class="nav-link">Business & P.IVA</a>
-                <a href="servizi.html" class="nav-link">Servizi & Assistenza</a>
-                <a href="smartphone.html" class="nav-link">Smartphone</a>
-                <a href="chi-siamo.html" class="nav-link">Chi siamo</a>
-                <a href="blog.html" class="nav-link">Blog & Guide</a>
-                <a href="lavora.html" class="nav-link">Lavora con noi</a>
-                <a href="negozi.html" class="nav-link">I Nostri Negozi</a>
-                <a href="contatti.html" class="nav-link">Contatti</a>
+                <a href="/privati" class="nav-link">Privati & Famiglia</a>
+                <a href="/business" class="nav-link">Business & P.IVA</a>
+                <a href="/servizi" class="nav-link">Servizi & Assistenza</a>
+                <a href="/smartphone" class="nav-link">Smartphone</a>
+                <a href="/chi-siamo" class="nav-link">Chi siamo</a>
+                <a href="/blog" class="nav-link">Blog & Guide</a>
+                <a href="/lavora-con-noi" class="nav-link">Lavora con noi</a>
+                <a href="/negozi" class="nav-link">I Nostri Negozi</a>
+                <a href="/contatti" class="nav-link">Contatti</a>
             </div>
         </div>
     </nav>
@@ -124,7 +122,7 @@
             </svg>
             <span>Partner Autorizzato Vodafone</span>
           </div>
-          <h1 id="titolo-hero">Oak <span style="color:#e60000">Tree</span></h1>
+          <h1 id="titolo-hero">Oak <span class="brand-highlight">Tree</span></h1>
           <p class="hero-subtitle">Rivenditore Autorizzato Vodafone • 3 negozi in Brianza • Assistenza diretta</p>
           
           <!-- TRUST IMMEDIATO -->
@@ -156,7 +154,7 @@
               </svg>
               WhatsApp
             </a>
-            <a class="btn btn-ghost" href="negozi.html" aria-label="Trova il negozio più vicino">
+            <a class="btn btn-ghost" href="/negozi" aria-label="Trova il negozio più vicino">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
                 <circle cx="12" cy="10" r="3"/>
@@ -170,7 +168,7 @@
         <div class="mock" aria-hidden="true">
           <div class="phone">
             <div class="screen">
-              <img src="/images/hero/mesh-1600.webp" alt="" width="800" height="1200" fetchpriority="high" decoding="async" style="width:100%;height:100%;object-fit:cover">
+              <img src="/images/hero/mesh-1600.webp" alt="" width="800" height="1200" fetchpriority="high" decoding="async" loading="eager">
             </div>
           </div>
           <div class="glass-card">5G • Fibra • Business</div>
@@ -182,12 +180,12 @@
     <section class="chi-siamo">
         <!-- Elementi flottanti animati -->
         <div class="floating-elements" aria-hidden="true">
-            <div class="float-element float-1"></div>
-            <div class="float-element float-2"></div>
-            <div class="float-element float-3"></div>
+            <div class="floating-dot floating-dot-1"></div>
+            <div class="floating-dot floating-dot-2"></div>
+            <div class="floating-dot floating-dot-3"></div>
         </div>
 
-        <div class="services-container">
+        <div class="container">
             <div class="section-header">
                 <div class="section-tag">• CHI SIAMO</div>
                 <h2 class="section-title">La Storia di Oak Tree</h2>
@@ -206,22 +204,22 @@
                         con professionalità e competenza, garantendo sempre il miglior rapporto qualità-prezzo.
                     </p>
                     
-                    <div class="stats-mini-grid">
-                        <div class="mini-stat">
-                            <div class="mini-stat-number">2012</div>
-                            <div class="mini-stat-label">Anno di apertura</div>
+                    <div class="story-stats">
+                        <div class="story-stat">
+                            <div class="story-stat-number">2012</div>
+                            <div class="story-stat-label">Anno di apertura</div>
                         </div>
-                        <div class="mini-stat">
-                            <div class="mini-stat-number">3</div>
-                            <div class="mini-stat-label">Negozi attivi</div>
+                        <div class="story-stat">
+                            <div class="story-stat-number">3</div>
+                            <div class="story-stat-label">Negozi attivi</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="story-visual">
                     <div class="partner-card">
-                        <div class="rotate-bg"></div>
-                        <div class="partner-content">
+                        <div class="partner-card-bg"></div>
+                        <div class="partner-card-content">
                             <div class="partner-icon">
                                 <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <circle cx="12" cy="8" r="7"/>
@@ -264,7 +262,7 @@
 
     <!-- Blog Preview Section -->
     <section class="blog-preview">
-        <div class="services-container">
+        <div class="container">
             <div class="section-header">
                 <div class="section-tag">• GUIDE & CONSIGLI</div>
                 <h2 class="section-title">I Nostri Esperti Condividono</h2>
@@ -282,7 +280,7 @@
                     </div>
                     <h3>Come Installare la Fibra FTTH</h3>
                     <p>Guida completa per l'installazione della fibra ottica fino a casa tua. Tutti i passaggi spiegati in modo semplice.</p>
-                    <a href="blog.html#installazione-fibra">Leggi la guida →</a>
+                    <a href="/blog/installazione-fibra" class="blog-link">Leggi la guida →</a>
                 </article>
 
                 <article class="blog-card">
@@ -294,7 +292,7 @@
                     </div>
                     <h3>5G Business: Ne Vale la Pena?</h3>
                     <p>Analisi completa costi/benefici del 5G per aziende. Quando conviene e quali vantaggi reali porta al business.</p>
-                    <a href="blog.html#5g-business">Leggi l'analisi →</a>
+                    <a href="/blog/5g-business" class="blog-link">Leggi l'analisi →</a>
                 </article>
 
                 <article class="blog-card">
@@ -307,21 +305,21 @@
                     </div>
                     <h3>Configurare il Router WiFi 6</h3>
                     <p>Tutorial step-by-step per ottimizzare le prestazioni del tuo router WiFi 6 e migliorare la copertura.</p>
-                    <a href="blog.html#configurazione-wifi6">Guarda il tutorial →</a>
+                    <a href="/blog/configurazione-wifi6" class="blog-link">Guarda il tutorial →</a>
                 </article>
             </div>
 
-            <div class="blog-cta">
-                <a href="blog.html" class="btn btn-primary">Tutte le Guide</a>
+            <div class="section-cta">
+                <a href="/blog" class="btn btn-primary">Tutte le Guide</a>
             </div>
         </div>
     </section>
 
     <!-- Lavora Con Noi Section -->
     <section class="careers">
-        <div class="shimmer-bar"></div>
+        <div class="careers-header-bg"></div>
         
-        <div class="services-container">
+        <div class="container">
             <div class="section-header">
                 <div class="section-tag">• LAVORA CON NOI</div>
                 <h2 class="section-title">Unisciti al Nostro Team</h2>
@@ -334,9 +332,9 @@
                     Se ami la tecnologia e il contatto con il pubblico, questa è l'opportunità per te.
                 </p>
 
-                <div class="benefits-mini-grid">
-                    <div class="benefit-mini">
-                        <div class="benefit-mini-icon">
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
                             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#e60000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/>
                                 <line x1="16" x2="16" y1="2" y2="6"/>
@@ -347,8 +345,8 @@
                         <strong>Contratto Stabile</strong>
                         <p>Tempo indeterminato con crescita professionale</p>
                     </div>
-                    <div class="benefit-mini">
-                        <div class="benefit-mini-icon">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
                             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#e60000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M3 3v18h18"/>
                                 <path d="M13 17V9"/>
@@ -359,8 +357,8 @@
                         <strong>Formazione Continua</strong>
                         <p>Corsi Vodafone e certificazioni tecniche</p>
                     </div>
-                    <div class="benefit-mini">
-                        <div class="benefit-mini-icon">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
                             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#e60000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <circle cx="12" cy="12" r="10"/>
                                 <polygon points="16.24,7.76 14.12,14.12 7.76,16.24 9.88,9.88"/>
@@ -371,7 +369,7 @@
                     </div>
                 </div>
 
-                <div class="application-card">
+                <div class="apply-card">
                     <h3>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <rect width="20" height="16" x="2" y="4" rx="2"/>
@@ -382,12 +380,12 @@
                     <p>
                         Invia il tuo CV all'indirizzo email: <strong>lavoro@oak-tree.it</strong>
                     </p>
-                    <p class="application-note">
+                    <p class="apply-note">
                         Ti contatteremo entro 48 ore per un primo colloquio conoscitivo
                     </p>
                 </div>
 
-                <a href="mailto:lavoro@oak-tree.it?subject=Candidatura Oak Tree" class="btn btn-primary careers-cta">
+                <a href="mailto:lavoro@oak-tree.it?subject=Candidatura Oak Tree" class="btn btn-primary btn-large">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <rect width="20" height="16" x="2" y="4" rx="2"/>
                         <path d="M6 8l6 4 6-4"/>
@@ -400,8 +398,9 @@
 
     <!-- Section Why Local -->
     <section class="why-local">
-      <div class="why-local-container">
-        <h2>Quello che Online <span style="color:#e60000">Non Puoi Avere</span></h2>
+      <div class="why-local-bg"></div>
+      <div class="container">
+        <h2>Quello che Online <span class="brand-highlight">Non Puoi Avere</span></h2>
         <div class="benefits-grid">
           <div class="benefit-card">
             <div class="benefit-icon">
@@ -441,132 +440,81 @@
     <!-- Offerte Section -->
     <section id="offerte" class="offerte-section">
       <!-- Subtle glow top -->
-      <div class="glow-top" aria-hidden="true"></div>
+      <div class="offerte-bg" aria-hidden="true"></div>
       
       <!-- OFFERTA ESCLUSIVA LOCALE -->
-      <div class="offerta-locale">
-        <div class="badge-esclusivo">SOLO IN NEGOZIO</div>
-        <h3>Fibra 2.5Gb + Mobile Unlimited</h3>
-        <div class="prezzo">
-          <span class="strike">€54.90 online</span>
-          <span class="actual">€39.90<small>/mese</small></span>
+      <div class="container">
+        <div class="offerta-locale">
+          <div class="badge-esclusivo">SOLO IN NEGOZIO</div>
+          <h3>Fibra 2.5Gb + Mobile Unlimited</h3>
+          <div class="prezzo">
+            <span class="strike">€54.90 online</span>
+            <span class="actual">€39.90<small>/mese</small></span>
+          </div>
+          <p class="extra-deal">+ iPhone 15 a €19/mese invece di €29</p>
+          <div class="cta-wrapper">
+            <a href="https://wa.me/393398765432?text=Ciao!%20Sono%20interessato%20all'offerta%20Fibra%202.5Gb%20%2B%20Mobile%20a%20€39.90" class="cta-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.123-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+              </svg>
+              WhatsApp: 339 876 5432
+            </a>
+            <span class="urgency-text">⚡ Attivazione immediata in negozio</span>
+          </div>
         </div>
-        <p class="extra-deal">+ iPhone 15 a €19/mese invece di €29</p>
-        <div class="cta-wrapper">
-          <a href="https://wa.me/393398765432?text=Ciao!%20Sono%20interessato%20all'offerta%20Fibra%202.5Gb%20%2B%20Mobile%20a%20€39.90" class="cta-primary">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.123-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        
+        <header class="offerte-header">
+          <div class="super-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
             </svg>
-            WhatsApp: 339 876 5432
-          </a>
-          <span class="urgency-text">⚡ Attivazione immediata in negozio</span>
-        </div>
-      </div>
-      
-      <header class="offerte-header">
-        <div class="super-badge">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#ff6600;">
-            <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
-          </svg>
-          Altre offerte in evidenza
-        </div>
-        <h2>Privati & Business</h2>
-        <p>Attivazione in negozio o da remoto, numero in portabilità senza stress.</p>
-      </header>
-
-      <div class="marquee">
-        <article class="plan plan-recommended">
-          <h3>5G Unlimited</h3>
-          <div class="price">€ 19,99 <small>/mese</small></div>
-          <ul>
-            <li>Giga, minuti e SMS illimitati</li>
-            <li>5G priorità rete</li>
-            <li>Hotspot incluso</li>
-          </ul>
-          <a class="btn btn-primary" href="privati.html#5g-unlimited">Attiva ora</a>
-        </article>
-
-        <article class="plan plan-popular">
-          <h3>Fibra 2.5 Gbps</h3>
-          <div class="price">€ 24,90 <small>/mese</small></div>
-          <ul>
-            <li>Modem Wi-Fi 6 incluso</li>
-            <li>Installazione rapida</li>
-            <li>Assistenza dedicata</li>
-          </ul>
-          <a class="btn btn-primary" href="servizi.html#fibra">Verifica copertura</a>
-        </article>
-
-        <article class="plan">
-          <h3>Business One</h3>
-          <div class="price">da € 29,90 <small>/mese</small></div>
-          <ul>
-            <li>Linea dedicata & IP statico</li>
-            <li>Centralino virtuale</li>
-            <li>Supporto priority</li>
-          </ul>
-          <a class="btn btn-primary" href="business.html#one">Richiedi consulenza</a>
-        </article>
-      </div>
-    </section>
-
-    <!-- Social Proof Locale -->
-    <section class="recensioni">
-      <div class="recensioni-container">
-        <h2>I Vostri Vicini Dicono di Noi</h2>
-        <p class="subtitle">Recensioni verificate da Google Business</p>
-        
-        <div class="reviews-grid">
-          <div class="review-card">
-            <div class="review-header">
-              <div class="stars">⭐⭐⭐⭐⭐</div>
-              <img src="/images/google-verified.svg" alt="Google Verified" class="google-badge" loading="lazy" width="80" height="20">
-            </div>
-            <strong>Marco P.</strong>
-            <span class="reviewer-info">Imprenditore, Paderno Dugnano</span>
-            <p>"Gestiscono 12 linee aziendali da 3 anni. Zero problemi, assistenza sempre puntuale. Risparmio €200/mese rispetto a prima."</p>
-            <time>2 settimane fa</time>
+            Altre offerte in evidenza
           </div>
-          
-          <div class="review-card">
-            <div class="review-header">
-              <div class="stars">⭐⭐⭐⭐⭐</div>
-              <img src="/images/google-verified.svg" alt="Google Verified" class="google-badge" loading="lazy" width="80" height="20">
-            </div>
-            <strong>Laura M.</strong>
-            <span class="reviewer-info">Famiglia, Giussano</span>
-            <p>"Finalmente qualcuno che ti spiega tutto CHIARO. Portabilità fatta in 10 minuti. Online ci avrei messo giorni."</p>
-            <time>1 mese fa</time>
-          </div>
-          
-          <div class="review-card">
-            <div class="review-header">
-              <div class="stars">⭐⭐⭐⭐⭐</div>
-              <img src="/images/google-verified.svg" alt="Google Verified" class="google-badge" loading="lazy" width="80" height="20">
-            </div>
-            <strong>Giuseppe R.</strong>
-            <span class="reviewer-info">Ristoratore, Villa Santa</span>
-            <p>"Avevo un casino con le fatture business. Risolto in negozio in mezz'ora. Provate a farlo online..."</p>
-            <time>3 settimane fa</time>
-          </div>
-        </div>
-        
-        <div class="review-cta">
-          <a href="https://g.page/r/techpartner-brianza/review" target="_blank" rel="noopener" class="btn-review">
-            Leggi tutte le 487 recensioni su Google →
-          </a>
-          <div class="rating-summary">
-            <span class="rating-number">4.8</span>
-            <div class="rating-stars">⭐⭐⭐⭐⭐</div>
-            <span class="rating-count">su 487 recensioni</span>
-          </div>
+          <h2>Privati & Business</h2>
+          <p>Attivazione in negozio o da remoto, numero in portabilità senza stress.</p>
+        </header>
+
+        <div class="marquee">
+          <article class="plan plan-recommended">
+            <h3>5G Unlimited</h3>
+            <div class="price">€ 19,99 <small>/mese</small></div>
+            <ul>
+              <li>Giga, minuti e SMS illimitati</li>
+              <li>5G priorità rete</li>
+              <li>Hotspot incluso</li>
+            </ul>
+            <a class="btn btn-primary" href="/privati#5g-unlimited">Attiva ora</a>
+          </article>
+
+          <article class="plan plan-popular">
+            <h3>Fibra 2.5 Gbps</h3>
+            <div class="price">€ 24,90 <small>/mese</small></div>
+            <ul>
+              <li>Modem Wi-Fi 6 incluso</li>
+              <li>Installazione rapida</li>
+              <li>Assistenza dedicata</li>
+            </ul>
+            <a class="btn btn-primary" href="/fibra#25g">Verifica copertura</a>
+          </article>
+
+          <article class="plan">
+            <h3>Business One</h3>
+            <div class="price">da € 29,90 <small>/mese</small></div>
+            <ul>
+              <li>Linea dedicata & IP statico</li>
+              <li>Centralino virtuale</li>
+              <li>Supporto priority</li>
+            </ul>
+            <a class="btn btn-primary" href="/business#one">Richiedi consulenza</a>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- Services Section -->
     <section class="services" id="services">
-        <div class="services-container">
+        <div class="services-bg"></div>
+        <div class="container">
             <div class="section-header">
                 <div class="section-tag">• I NOSTRI SERVIZI</div>
                 <h2 class="section-title">Soluzioni Complete per Te</h2>
@@ -587,7 +535,7 @@
                 </div>
                 <h3>Privati & Famiglia</h3>
                 <p>Offerte mobile personalizzate, fibra casa ultraveloce e smartphone top. Vantaggi famiglia e intrattenimento.</p>
-                <a class="card-cta" href="privati.html">Scopri le offerte →</a>
+                <a class="card-cta" href="/privati">Scopri le offerte →</a>
               </article>
 
               <article class="card">
@@ -605,7 +553,7 @@
                 </div>
                 <h3>Business & P.IVA</h3>
                 <p>Connettività dedicata, centralini, IP statico e assistenza prioritaria. Soluzioni scalabili per crescere.</p>
-                <a class="card-cta" href="business.html">Soluzioni su misura →</a>
+                <a class="card-cta" href="/business">Soluzioni su misura →</a>
               </article>
 
               <article class="card">
@@ -616,7 +564,7 @@
                 </div>
                 <h3>Servizi & Assistenza</h3>
                 <p>Portabilità, configurazione, riparazioni e consulenza in negozio o da remoto. Team certificato.</p>
-                <a class="card-cta" href="servizi.html">Tutti i servizi →</a>
+                <a class="card-cta" href="/servizi">Tutti i servizi →</a>
               </article>
 
               <article class="card">
@@ -628,7 +576,7 @@
                 </div>
                 <h3>Smartphone Top</h3>
                 <p>iPhone 16, Galaxy S25 e brand premium. Permuta e finanziamento TAN 0% su selezione.</p>
-                <a class="card-cta" href="smartphone.html">Disponibilità in negozio →</a>
+                <a class="card-cta" href="/smartphone">Disponibilità in negozio →</a>
               </article>
 
               <article class="card">
@@ -642,7 +590,7 @@
                 </div>
                 <h3>I Nostri Negozi</h3>
                 <p>3 store a Milano. Prenota appuntamento o entra senza attesa: assistenza rapida e attivazione express.</p>
-                <a class="card-cta" href="negozi.html">Trova il negozio →</a>
+                <a class="card-cta" href="/negozi">Trova il negozio →</a>
               </article>
 
               <article class="card">
@@ -661,7 +609,7 @@
 
     <!-- CTA Section -->
     <section class="cta-section">
-        <div class="cta-container">
+        <div class="container">
             <h2 class="cta-title">Inizia il Tuo Futuro Digitale</h2>
             <p class="cta-subtitle">
                 Analisi gratuita delle tue esigenze, confronto trasparente delle migliori offerte 
@@ -672,15 +620,14 @@
                     <span>📞</span>
                     <span>Chiama 339 876 5432</span>
                 </a>
-                <a href="negozi.html" class="btn-white">
+                <a href="/negozi" class="btn-white">
                     <span>📍</span>
                     <span>Trova Negozio</span>
                 </a>
             </div>
         </div>
-    </section>
-
-    <!-- Footer -->
+  </section>
+  <!-- Footer -->
     <footer class="site-footer">
       <!-- wave separator -->
       <div class="wave" aria-hidden="true">
@@ -701,7 +648,7 @@
           </div>
           <div class="footer-cta">
             <a class="btn btn-primary" href="https://wa.me/393398765432?text=Ciao!%20Vorrei%20un%20preventivo%20Vodafone." aria-label="Scrivici su WhatsApp">💬 WhatsApp</a>
-            <a class="btn btn-ghost" href="negozi.html" aria-label="Trova negozio Vodafone a Milano">📍 Trova Negozio</a>
+            <a class="btn btn-ghost" href="/negozi" aria-label="Trova negozio Vodafone a Milano">📍 Trova Negozio</a>
           </div>
         </div>
 
@@ -711,11 +658,11 @@
           <section class="ft-block col-4" aria-labelledby="ft-servizi">
             <h4 id="ft-servizi">Servizi</h4>
             <ul class="ft-links">
-              <li><a href="privati.html">Offerte Privati</a></li>
-              <li><a href="business.html">Soluzioni Business</a></li>
-              <li><a href="servizi.html#fibra">Fibra Ottica</a></li>
-              <li><a href="smartphone.html">Smartphone Premium</a></li>
-              <li><a href="servizi.html">Assistenza & Portabilità</a></li>
+              <li><a href="/privati">Offerte Privati</a></li>
+              <li><a href="/business">Soluzioni Business</a></li>
+              <li><a href="/fibra">Fibra Ottica</a></li>
+              <li><a href="/smartphone">Smartphone Premium</a></li>
+              <li><a href="/servizi">Assistenza & Portabilità</a></li>
             </ul>
           </section>
 
@@ -727,7 +674,7 @@
               <div>
                 <strong>CC Brianza <span class="chip">Paderno D.</span><span class="open-badge" data-hours="09:30-19:30"></span></strong><br>
                 <small>Strada Statale dei Giovi, 35 – 20037 Paderno Dugnano (MI)</small><br>
-                <a href="negozi.html#paderno-dugnano">Dettagli & Indicazioni</a>
+                <a href="/negozi/paderno-dugnano">Dettagli & Indicazioni</a>
               </div>
             </div>
 
@@ -736,7 +683,7 @@
               <div>
                 <strong>CC Carrefour <span class="chip">Giussano</span><span class="open-badge" data-hours="09:30-19:30"></span></strong><br>
                 <small>Via Prealpi, 74 – 20833 Giussano (MB)</small><br>
-                <a href="negozi.html#giussano">Dettagli & Indicazioni</a>
+                <a href="/negozi/giussano">Dettagli & Indicazioni</a>
               </div>
             </div>
 
@@ -745,7 +692,7 @@
               <div>
                 <strong>CC Gigante <span class="chip">Villa Santa</span><span class="open-badge" data-hours="09:00-20:00"></span></strong><br>
                 <small>Via Tiziano De Celio, 2 – 20838 Villa Santa (MB)</small><br>
-                <a href="negozi.html#villa-santa">Dettagli & Indicazioni</a>
+                <a href="/negozi/villa-santa">Dettagli & Indicazioni</a>
               </div>
             </div>
           </section>
@@ -793,7 +740,7 @@
           <section class="ft-block col-2" aria-labelledby="ft-legale">
             <h4 id="ft-legale">Legale</h4>
             <p><strong>Oak Tree S.r.l.</strong><br>P.IVA 12345678901 – REA MI-1234567<br>Cap. Soc. €50.000 i.v.</p>
-            <p style="margin-top:8px;color:rgba(255,255,255,.8)">
+            <p class="disclaimer">
               Vodafone è un marchio registrato di Vodafone Group Plc.<br>Questo sito è di un rivenditore autorizzato.
             </p>
           </section>
@@ -803,9 +750,9 @@
         <div class="footer-bottom">
           <div>© 2025 Oak Tree</div>
           <nav class="legal" aria-label="Link legali">
-            <a href="privacy.html">Privacy</a> ·
-            <a href="privacy.html#cookie">Cookie</a> ·
-            <a href="privacy.html#termini">Termini</a>
+            <a href="/privacy">Privacy</a> ·
+            <a href="/cookie">Cookie</a> ·
+            <a href="/termini">Termini</a>
           </nav>
         </div>
       </div>
@@ -827,12 +774,11 @@
 
     <!-- Cookie Banner GDPR -->
     <div id="cookie" class="cookie-banner">
-        Usiamo cookie tecnici e di misurazione anonima. <a href="privacy.html#cookie">Dettagli</a>.
+        Usiamo cookie tecnici e di misurazione anonima. <a href="/cookie">Dettagli</a>.
         <button id="okCookie" class="btn btn-primary">OK</button>
     </div>
 
-    <!-- Scripts -->
-    <script src="scripts/main.js"></script>
-    <script src="scripts/cookie-banner.js"></script>
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
 </body>
-                      </html>
+</html>
