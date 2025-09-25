@@ -696,23 +696,20 @@
       grid-template-columns:repeat(3,1fr);
       gap:2rem;
       margin:2rem 0;
-      max-width:100%;
+      padding-right:4rem;
     }
     
     .stat-box{
       text-align:center;
-      padding:2.2rem 1.8rem;
+      padding:2rem 2rem;
       background:linear-gradient(135deg, rgba(255,255,255,0.9), rgba(248,250,252,0.9));
       border:1px solid #e2e8f0;
-      border-radius:24px;
+      border-radius:20px;
       box-shadow:0 8px 20px rgba(0,0,0,.08);
       transition:all 0.3s ease;
       position:relative;
       overflow:hidden;
-      min-height:140px;
-      display:flex;
-      flex-direction:column;
-      justify-content:center;
+      min-width:200px;
     }
 
     .stat-box::before{
@@ -720,23 +717,22 @@
       position:absolute;
       top:0;
       right:0;
-      width:80px;
-      height:80px;
+      width:60px;
+      height:60px;
       background:
-        radial-gradient(circle at 15px 15px, rgba(230,0,0,.08) 2px, transparent 3px),
-        radial-gradient(circle at 35px 20px, rgba(230,0,0,.05) 1.5px, transparent 2.5px),
-        radial-gradient(circle at 25px 35px, rgba(230,0,0,.10) 2px, transparent 3px),
-        radial-gradient(circle at 50px 28px, rgba(230,0,0,.06) 1px, transparent 2px),
-        radial-gradient(circle at 60px 45px, rgba(230,0,0,.07) 1.5px, transparent 2px);
-      background-size:60px 60px;
+        radial-gradient(circle at 12px 12px, rgba(230,0,0,.08) 2px, transparent 3px),
+        radial-gradient(circle at 28px 16px, rgba(230,0,0,.05) 1.5px, transparent 2.5px),
+        radial-gradient(circle at 20px 28px, rgba(230,0,0,.10) 2px, transparent 3px),
+        radial-gradient(circle at 36px 24px, rgba(230,0,0,.06) 1px, transparent 2px);
+      background-size:40px 40px;
       opacity:0;
       transition:opacity 0.4s ease;
       pointer-events:none;
     }
 
     .stat-box:hover{
-      transform:translateY(-6px);
-      box-shadow:0 16px 40px rgba(230,0,0,.14);
+      transform:translateY(-4px);
+      box-shadow:0 12px 32px rgba(230,0,0,.12);
       border-color:#e60000;
     }
 
@@ -746,17 +742,16 @@
     
     .stat-number{
       display:block;
-      font-size:2.4rem;
+      font-size:2rem;
       font-weight:800;
       color:#e60000;
-      margin-bottom:0.8rem;
+      margin-bottom:0.5rem;
       filter:drop-shadow(0 2px 4px rgba(230,0,0,.2));
-      line-height:1.1;
     }
     
     .stat-label{
       display:block;
-      font-size:1rem;
+      font-size:0.95rem;
       color:#64748b;
       text-transform:uppercase;
       letter-spacing:0.05em;
