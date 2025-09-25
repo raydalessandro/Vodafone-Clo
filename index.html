@@ -774,38 +774,28 @@
     }
 
     .btn-primary{
-      background:#fff;
-      border:2px solid #e60000;
-      color:#e60000;
+      position:relative;
+      overflow:hidden;
+      background:#e60000;
+      color:#fff;
+      border:0;
       box-shadow:0 4px 16px rgba(230,0,0,.15);
     }
     
-    /* Puntini per btn-primary */
-    .btn-primary::before{
-      content:'';
+    .btn-primary::after{
+      content:"";
       position:absolute;
-      top:0;
-      right:0;
-      width:50px;
-      height:100%;
-      background:
-        radial-gradient(circle at 12px 12px, rgba(230,0,0,.12) 2px, transparent 3px),
-        radial-gradient(circle at 30px 18px, rgba(230,0,0,.08) 1.5px, transparent 2.5px),
-        radial-gradient(circle at 20px 30px, rgba(230,0,0,.10) 2px, transparent 3px);
-      background-size:40px 40px;
-      opacity:0;
-      transition:opacity 0.3s ease;
-    }
-
-    .btn-primary:hover{
-      background:#e60000;
-      color:#fff;
-      transform:translateY(-3px);
-      box-shadow:0 8px 25px rgba(230,0,0,.25);
+      inset:-100% -60%;
+      background:linear-gradient(120deg, transparent 30%, rgba(255,255,255,.35) 50%, transparent 70%);
+      transform:translateX(-20%);
     }
     
-    .btn-primary:hover::before{
-      opacity:0.4;
+    .btn-primary:hover::after{
+      animation:shine .9s ease;
+    }
+    
+    @keyframes shine{
+      to{ transform:translateX(120%); }
     }
     
     .btn-primary:active{
@@ -2457,6 +2447,20 @@
                 el.classList.toggle('closed', !open);
             });
         })();
+
+        // Phone tilt parallax - disabilita su touch
+        const mock = document.querySelector('.mock');
+        if (matchMedia('(pointer:fine)').matches && mock){
+            mock.addEventListener('mousemove', function(e){
+                const r = mock.getBoundingClientRect();
+                const x = (e.clientX - r.left) / r.width - 0.5;
+                const y = (e.clientY - r.top) / r.height - 0.5;
+                mock.style.transform = 'perspective(1200px) rotateY(' + (-10 + x*10) + 'deg) rotateX(' + (4 - y*6) + 'deg) translateY(' + (y*-6) + 'px)';
+            });
+            mock.addEventListener('mouseleave', function(){
+                mock.style.transform = 'perspective(1200px) rotateY(-10deg) rotateX(4deg)';
+            });
+        }
     </script>
 </body>
 </html>
