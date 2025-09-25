@@ -507,7 +507,7 @@
 
     .nav-link{
       text-decoration:none;
-      color:#e60000;
+      color:#1e293b;
       font-weight:600;
       position:relative;
       transition:all 0.3s ease;
@@ -522,7 +522,7 @@
     }
 
     .nav-link:hover{
-      color:#b30000;
+      color:#e60000;
       transform:translateY(-1px);
       background-size: 80% 2px;
       background-color:rgba(230,0,0,0.05);
@@ -575,13 +575,14 @@
       border:1px solid var(--card-bd);
       border-radius:12px;
       background:#fff;
-      color:#e60000;
+      color:#1e293b;
       font-weight:600;
     }
 
     .mobile-nav-links .nav-link:hover{
       background:#fef2f2;
       border-color:#e60000;
+      color:#e60000;
     }
 
     /* Hero with Fibonacci circles */
@@ -1753,6 +1754,7 @@
         display:flex;
       }
     }
+    /* Mobile optimizations */
     @media (max-width:768px){
       .nav-container{
         padding:0.8rem 1rem;
@@ -1761,6 +1763,145 @@
       .logo{
         font-size:1.5rem;
       }
+      
+      /* Hero mobile improvements */
+      .hero{
+        padding:80px 16px 32px;
+        min-height:90vh;
+      }
+      
+      .hero-stats{
+        grid-template-columns:1fr;
+        gap:1rem;
+        margin:1.5rem 0;
+      }
+      
+      .stat-box{
+        padding:1.5rem;
+        display:flex;
+        align-items:center;
+        text-align:left;
+        gap:1rem;
+      }
+      
+      .stat-content{
+        flex:1;
+      }
+      
+      .stat-number{
+        font-size:1.8rem;
+        margin-bottom:0.25rem;
+      }
+      
+      .stat-label{
+        font-size:0.9rem;
+      }
+      
+      .cta-row{
+        flex-direction:column;
+        gap:1rem;
+        align-items:stretch;
+      }
+      
+      .btn{
+        justify-content:center;
+        padding:16px 24px;
+        font-size:1rem;
+      }
+      
+      /* Card improvements */
+      .card{
+        padding:24px 20px;
+        margin-bottom:1rem;
+      }
+      
+      .card h3{
+        font-size:1.3rem;
+        margin-bottom:1rem;
+      }
+      
+      .card p{
+        font-size:1rem;
+        line-height:1.6;
+        margin-bottom:1.5rem;
+      }
+      
+      .card-cta{
+        font-size:1.1rem;
+        padding:12px 0;
+      }
+      
+      /* Services section mobile */
+      .services{
+        padding:4rem 1rem;
+      }
+      
+      .section-title{
+        font-size:clamp(1.8rem,6vw,2.5rem);
+      }
+      
+      /* Plans mobile optimization */
+      .marquee{
+        display:flex !important;
+        flex-direction:column;
+        gap:1.5rem;
+      }
+      
+      .plan{
+        min-height:auto;
+        padding:24px 20px;
+        margin-bottom:0;
+      }
+      
+      .plan h3{
+        font-size:1.4rem;
+        margin-bottom:1rem;
+        justify-content:space-between;
+      }
+      
+      .plan .price{
+        font-size:2.2rem;
+        margin-bottom:1.25rem;
+      }
+      
+      .plan ul{
+        margin-bottom:1.5rem;
+      }
+      
+      .plan ul li{
+        font-size:1rem;
+        margin:10px 0;
+        padding-left:20px;
+      }
+      
+      .plan .btn{
+        margin-top:1rem;
+        padding:14px 20px;
+        font-size:1.1rem;
+      }
+      
+      /* Footer mobile */
+      .footer-grid{
+        grid-template-columns:1fr;
+        text-align:center;
+        gap:2rem;
+      }
+      
+      .store{
+        text-align:left;
+        padding:12px 0;
+      }
+      
+      /* WhatsApp button mobile */
+      .whatsapp-btn{
+        width:60px;
+        height:60px;
+        font-size:1.6rem;
+        bottom:20px;
+        right:20px;
+      }
+      
+      /* Mobile menu improvements */
       .mobile-menu-btn.active .hamburger-line:nth-child(1){
         transform:rotate(-45deg) translate(-5px,6px);
       }
@@ -1770,20 +1911,24 @@
       .mobile-menu-btn.active .hamburger-line:nth-child(3){
         transform:rotate(45deg) translate(-5px,-6px);
       }
+      
+      .mobile-nav-links .nav-link{
+        padding:1.2rem;
+        font-size:1.1rem;
+        margin-bottom:0.5rem;
+      }
+      
+      /* CTA buttons mobile */
       .cta-buttons{
         flex-direction:column;
-        align-items:center;
+        align-items:stretch;
+        gap:1rem;
       }
-      .footer-grid{
-        grid-template-columns:1fr;
-        text-align:center;
-      }
-      .whatsapp-btn{
-        width:60px;
-        height:60px;
-        font-size:1.6rem;
-        bottom:20px;
-        right:20px;
+      
+      .btn-white{
+        padding:1.2rem;
+        font-size:1.1rem;
+        justify-content:center;
       }
     }
   </style>
@@ -1896,19 +2041,25 @@
           <h1 id="titolo-hero">Oak <span style="color:#e60000">Tree</span></h1>
           <p class="hero-subtitle">Rivenditore Autorizzato Vodafone • 3 negozi in Brianza • Assistenza diretta</p>
           
-          <!-- TRUST IMMEDIATO -->
+          <!-- TRUST IMMEDIATO - Mobile Layout -->
           <div class="hero-stats">
             <div class="stat-box">
-              <span class="stat-number">2.000+</span>
-              <span class="stat-label">clienti business</span>
+              <div class="stat-content">
+                <span class="stat-number">2.000+</span>
+                <span class="stat-label">clienti business</span>
+              </div>
             </div>
             <div class="stat-box">
-              <span class="stat-number">Dal 2010</span>
-              <span class="stat-label">sempre attivi</span>
+              <div class="stat-content">
+                <span class="stat-number">Dal 2010</span>
+                <span class="stat-label">sempre attivi</span>
+              </div>
             </div>
             <div class="stat-box">
-              <span class="stat-number">10 min</span>
-              <span class="stat-label">risposta rapida</span>
+              <div class="stat-content">
+                <span class="stat-number">10 min</span>
+                <span class="stat-label">risposta rapida</span>
+              </div>
             </div>
           </div>
           
