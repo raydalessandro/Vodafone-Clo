@@ -1,0 +1,86 @@
+/* Critical CSS per First Paint ottimizzato */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height:1.6;
+  color:#4a4a4a;
+  overflow-x:hidden;
+  background:#ffffff;
+}
+
+/* Skip link */
+.skip-link{
+  position:absolute;
+  left:-9999px;
+  background:#fff;
+  color:#e60000;
+  padding:8px 12px;
+  z-index:9999;
+  text-decoration:none;
+  border-radius:4px;
+}
+
+.skip-link:focus{
+  left:12px;
+  top:12px;
+  border:2px solid #e60000;
+}
+
+/* Navigation Critical */
+.navbar{
+  position:fixed;
+  top:0;
+  width:100%;
+  background:rgba(255,255,255,.95);
+  backdrop-filter:blur(20px);
+  z-index:1000;
+  border-bottom:1px solid #e2e8f0;
+  transition:all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-container{
+  max-width:1200px;
+  margin:0 auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:1rem 2rem;
+}
+
+.logo{
+  font-size:1.8rem;
+  font-weight:700;
+  background:linear-gradient(135deg, #e60000, #ff3333);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
+  text-decoration:none;
+  display:flex;
+  align-items:center;
+  gap:0.5rem;
+}
+
+/* Hero Critical */
+.hero{
+  min-height:100vh;
+  display:grid;
+  place-items:center;
+  padding:96px 24px 48px;
+}
+
+.hero h1{
+  font-size:clamp(36px,7vw,72px);
+  line-height:1.05;
+  margin:.9rem 0;
+  font-weight:800;
+  text-align:center;
+}
+
+.text-red{
+  color:#e60000;
+}
