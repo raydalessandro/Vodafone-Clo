@@ -352,12 +352,15 @@
     /* Deal/piano */
     .plan{
       border-radius:24px;
-      padding:24px;
+      padding:32px;
       background:#fff;
       border:1px solid var(--card-bd);
       box-shadow:0 10px 30px rgba(0,0,0,.06);
       transition:.25s ease;
       position:relative;
+      min-height:420px;
+      display:flex;
+      flex-direction:column;
     }
     
     .plan::before{
@@ -386,6 +389,8 @@
       display:flex;
       align-items:center;
       gap:.5rem;
+      font-size:1.5rem;
+      margin-bottom:1rem;
     }
     
     /* Deal/piano variations */
@@ -426,22 +431,42 @@
     }
     
     .plan .price{
-      font-size:2rem;
+      font-size:2.5rem;
       font-weight:800;
       color:#e60000;
+      margin-bottom:1.5rem;
     }
     
     .plan ul{
-      margin:12px 0 0 18px;
+      margin:0 0 auto 0;
+      padding:0;
+      list-style:none;
       color:var(--muted);
+      flex-grow:1;
     }
     
     .plan ul li{
-      margin:6px 0;
+      margin:12px 0;
+      position:relative;
+      padding-left:24px;
+      font-size:1rem;
+      line-height:1.6;
+    }
+
+    .plan ul li::before{
+      content:"✓";
+      position:absolute;
+      left:0;
+      color:#e60000;
+      font-weight:bold;
     }
     
     .plan .btn{
-      margin-top:14px;
+      margin-top:24px;
+      align-self:stretch;
+      justify-content:center;
+      padding:16px 24px;
+      font-size:1.1rem;
     }
 
     /* Navigation */
@@ -603,8 +628,8 @@
     .hero-inner{
       max-width:1200px;
       display:grid;
-      grid-template-columns:1.1fr .9fr;
-      gap:48px;
+      grid-template-columns:1fr 0.8fr;
+      gap:64px;
       align-items:center;
     }
 
@@ -1642,7 +1667,7 @@
       .mock{
         transform:none;
         max-width:240px;
-        margin:0 auto;
+        margin:0 auto !important;
       }
       .phone{
         width:240px;
@@ -1842,7 +1867,7 @@
         </div>
 
         <!-- Visual -->
-        <div class="mock" aria-hidden="true">
+        <div class="mock" aria-hidden="true" style="margin-left:auto; margin-right:0;">
           <div class="phone">
             <div class="screen">
               Vodafone 5G<br>
@@ -1985,36 +2010,42 @@
         <p style="color:#64748b;margin-bottom:10px">Attivazione in negozio o da remoto, numero in portabilità senza stress.</p>
       </header>
 
-      <div class="marquee" style="display:flex;gap:18px;overflow:auto;scroll-snap-type:x mandatory;padding-bottom:6px">
-        <article class="plan plan-recommended" style="min-width:320px;scroll-snap-align:start">
+      <div class="marquee" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:24px;padding-bottom:6px">
+        <article class="plan plan-recommended">
           <h3>5G Unlimited</h3>
           <div class="price">€ 19,99 <small style="font-size:.9rem;color:#64748b">/mese</small></div>
           <ul>
             <li>Giga, minuti e SMS illimitati</li>
             <li>5G priorità rete</li>
             <li>Hotspot incluso</li>
+            <li>Roaming UE senza limiti</li>
+            <li>App premium incluse</li>
           </ul>
           <a class="btn btn-primary" href="#privati-5g">Attiva ora</a>
         </article>
 
-        <article class="plan plan-popular" style="min-width:320px;scroll-snap-align:start">
+        <article class="plan plan-popular">
           <h3>Fibra 2.5 Gbps</h3>
           <div class="price">€ 24,90 <small style="font-size:.9rem;color:#64748b">/mese</small></div>
           <ul>
             <li>Modem Wi-Fi 6 incluso</li>
             <li>Installazione rapida</li>
             <li>Assistenza dedicata</li>
+            <li>Velocità fino a 2.5Gb/s</li>
+            <li>Garanzia copertura totale</li>
           </ul>
           <a class="btn btn-primary" href="#fibra-25g">Verifica copertura</a>
         </article>
 
-        <article class="plan" style="min-width:320px;scroll-snap-align:start">
+        <article class="plan">
           <h3>Business One</h3>
           <div class="price">da € 29,90 <small style="font-size:.9rem;color:#64748b">/mese</small></div>
           <ul>
             <li>Linea dedicata & IP statico</li>
             <li>Centralino virtuale</li>
             <li>Supporto priority</li>
+            <li>Backup automatico dati</li>
+            <li>Consulenza personalizzata</li>
           </ul>
           <a class="btn btn-primary" href="#business-one">Richiedi consulenza</a>
         </article>
