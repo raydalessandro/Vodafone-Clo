@@ -237,6 +237,9 @@
       transition: all 0.3s ease;
       position: relative;
       border: 1px solid var(--light-gray);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
     }
 
     .phone-card:hover {
@@ -249,10 +252,11 @@
       position: relative;
       background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
       padding: 2rem;
-      min-height: 280px;
+      height: 280px;
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-shrink: 0;
     }
 
     .phone-badge {
@@ -285,6 +289,9 @@
 
     .phone-details {
       padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
     }
 
     .phone-brand {
@@ -301,6 +308,7 @@
       color: var(--ink);
       margin-bottom: 0.5rem;
       line-height: 1.2;
+      min-height: 2.6rem;
     }
 
     .phone-specs {
@@ -308,6 +316,7 @@
       gap: 0.75rem;
       margin-bottom: 1rem;
       flex-wrap: wrap;
+      min-height: 2rem;
     }
 
     .spec-badge {
@@ -322,7 +331,7 @@
     .phone-pricing {
       border-top: 1px solid var(--light-gray);
       padding-top: 1rem;
-      margin-top: 1rem;
+      margin-top: auto;
     }
 
     .price-original {
@@ -1160,12 +1169,7 @@
                     <article class="phone-card" data-category="apple">
                         <div class="phone-image-wrapper">
                             <span class="phone-badge new">NUOVO</span>
-                            <svg class="phone-image" viewBox="0 0 100 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="10" y="10" width="80" height="160" rx="12" fill="#1a1a1a"/>
-                                <rect x="12" y="20" width="76" height="140" rx="8" fill="#000"/>
-                                <circle cx="50" cy="15" r="2" fill="#333"/>
-                                <rect x="45" y="165" width="10" height="1" rx="0.5" fill="#666"/>
-                            </svg>
+                            <img class="phone-image" src="https://via.placeholder.com/180x240/1a1a1a/ffffff?text=iPhone+16+Pro" alt="iPhone 16 Pro Max" style="width: 180px; height: auto; object-fit: contain; border-radius: 12px;">
                         </div>
                         <div class="phone-details">
                             <div class="phone-brand">Apple</div>
@@ -1193,11 +1197,7 @@
                     <article class="phone-card" data-category="samsung">
                         <div class="phone-image-wrapper">
                             <span class="phone-badge promo">-20%</span>
-                            <svg class="phone-image" viewBox="0 0 100 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="10" y="10" width="80" height="160" rx="10" fill="#e0e0e0"/>
-                                <rect x="12" y="15" width="76" height="150" rx="8" fill="#000"/>
-                                <circle cx="50" cy="12" r="1.5" fill="#666"/>
-                            </svg>
+                            <img class="phone-image" src="https://via.placeholder.com/180x240/2c3e50/ffffff?text=Galaxy+S25" alt="Samsung Galaxy S25 Ultra" style="width: 180px; height: auto; object-fit: contain; border-radius: 12px;">
                         </div>
                         <div class="phone-details">
                             <div class="phone-brand">Samsung</div>
@@ -1225,11 +1225,7 @@
                     <article class="phone-card" data-category="google">
                         <div class="phone-image-wrapper">
                             <span class="phone-badge">5G</span>
-                            <svg class="phone-image" viewBox="0 0 100 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="10" y="10" width="80" height="160" rx="14" fill="#f0f0f0"/>
-                                <rect x="12" y="18" width="76" height="144" rx="10" fill="#000"/>
-                                <rect x="45" y="12" width="10" height="3" rx="1.5" fill="#999"/>
-                            </svg>
+                            <img class="phone-image" src="https://via.placeholder.com/180x240/34495e/ffffff?text=Pixel+9+Pro" alt="Google Pixel 9 Pro" style="width: 180px; height: auto; object-fit: contain; border-radius: 12px;">
                         </div>
                         <div class="phone-details">
                             <div class="phone-brand">Google</div>
@@ -1288,10 +1284,7 @@
                     <!-- iPhone Series -->
                     <article class="phone-card" data-category="apple">
                         <div class="phone-image-wrapper">
-                            <svg class="phone-image" viewBox="0 0 100 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="10" y="10" width="80" height="160" rx="12" fill="#2c2c2c"/>
-                                <rect x="12" y="20" width="76" height="140" rx="8" fill="#000"/>
-                            </svg>
+                            <img class="phone-image" src="https://via.placeholder.com/160x220/2c2c2c/ffffff?text=iPhone+16" alt="iPhone 16" style="width: 160px; height: auto; object-fit: contain; border-radius: 10px;">
                         </div>
                         <div class="phone-details">
                             <div class="phone-brand">Apple</div>
@@ -1316,10 +1309,7 @@
                     <article class="phone-card" data-category="apple">
                         <div class="phone-image-wrapper">
                             <span class="phone-badge promo">BEST PRICE</span>
-                            <svg class="phone-image" viewBox="0 0 100 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="10" y="10" width="80" height="160" rx="12" fill="#fff"/>
-                                <rect x="12" y="20" width="76" height="140" rx="8" fill="#000"/>
-                            </svg>
+                            <img class="phone-image" src="https://via.placeholder.com/160x220/f0f0f0/333333?text=iPhone+15" alt="iPhone 15" style="width: 160px; height: auto; object-fit: contain; border-radius: 10px;">
                         </div>
                         <div class="phone-details">
                             <div class="phone-brand">Apple</div>
@@ -1345,10 +1335,7 @@
                     <!-- Samsung Series -->
                     <article class="phone-card" data-category="samsung">
                         <div class="phone-image-wrapper">
-                            <svg class="phone-image" viewBox="0 0 100 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="10" y="10" width="80" height="160" rx="10" fill="#3a3a3a"/>
-                                <rect x="12" y="15" width="76" height="150" rx="8" fill="#000"/>
-                            </svg>
+                            <img class="phone-image" src="https://via.placeholder.com/160x220/3a3a3a/ffffff?text=Galaxy+S25%2B" alt="Galaxy S25+" style="width: 160px; height: auto; object-fit: contain; border-radius: 10px;">
                         </div>
                         <div class="phone-details">
                             <div class="phone-brand">Samsung</div>
@@ -1373,10 +1360,7 @@
                     <article class="phone-card" data-category="samsung">
                         <div class="phone-image-wrapper">
                             <span class="phone-badge">PIEGHEVOLE</span>
-                            <svg class="phone-image" viewBox="0 0 100 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="15" y="40" width="70" height="100" rx="8" fill="#8b5cf6"/>
-                                <rect x="17" y="45" width="66" height="90" rx="6" fill="#000"/>
-                            </svg>
+                            <img class="phone-image" src="https://via.placeholder.com/160x220/8b5cf6/ffffff?text=Z+Flip6" alt="Galaxy Z Flip6" style="width: 160px; height: auto; object-fit: contain; border-radius: 10px;">
                         </div>
                         <div class="phone-details">
                             <div class="phone-brand">Samsung</div>
@@ -1402,10 +1386,7 @@
                     <article class="phone-card" data-category="xiaomi">
                         <div class="phone-image-wrapper">
                             <span class="phone-badge promo">-30%</span>
-                            <svg class="phone-image" viewBox="0 0 100 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="10" y="10" width="80" height="160" rx="12" fill="#ff6900"/>
-                                <rect x="12" y="18" width="76" height="144" rx="8" fill="#000"/>
-                            </svg>
+                            <img class="phone-image" src="https://via.placeholder.com/160x220/ff6900/ffffff?text=Xiaomi+14" alt="Xiaomi 14 Ultra" style="width: 160px; height: auto; object-fit: contain; border-radius: 10px;">
                         </div>
                         <div class="phone-details">
                             <div class="phone-brand">Xiaomi</div>
@@ -1430,10 +1411,7 @@
 
                     <article class="phone-card" data-category="xiaomi">
                         <div class="phone-image-wrapper">
-                            <svg class="phone-image" viewBox="0 0 100 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="10" y="10" width="80" height="160" rx="10" fill="#666"/>
-                                <rect x="12" y="18" width="76" height="144" rx="8" fill="#000"/>
-                            </svg>
+                            <img class="phone-image" src="https://via.placeholder.com/160x220/666666/ffffff?text=Redmi+Note" alt="Redmi Note 13 Pro" style="width: 160px; height: auto; object-fit: contain; border-radius: 10px;">
                         </div>
                         <div class="phone-details">
                             <div class="phone-brand">Xiaomi</div>
@@ -1458,10 +1436,7 @@
                     <!-- OPPO Series -->
                     <article class="phone-card" data-category="oppo">
                         <div class="phone-image-wrapper">
-                            <svg class="phone-image" viewBox="0 0 100 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="10" y="10" width="80" height="160" rx="14" fill="#1ba468"/>
-                                <rect x="12" y="18" width="76" height="144" rx="10" fill="#000"/>
-                            </svg>
+                            <img class="phone-image" src="https://via.placeholder.com/160x220/1ba468/ffffff?text=OPPO+X6" alt="OPPO Find X6 Pro" style="width: 160px; height: auto; object-fit: contain; border-radius: 10px;">
                         </div>
                         <div class="phone-details">
                             <div class="phone-brand">OPPO</div>
