@@ -1,0 +1,1769 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contatti e Assistenza | Oak Tree Vodafone Milano</title>
+  <meta name="description" content="Contatta Oak Tree Vodafone: WhatsApp, telefono, email o vieni in negozio. Form preventivo online, assistenza rapida e consulenza gratuita a Milano.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://oak-tree.com/contatti.html">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:site_name" content="Oak Tree">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contatti - Oak Tree Vodafone">
+  <meta property="og:description" content="Molteplici modi per contattarci: WhatsApp, telefono, email, form online. Assistenza rapida e consulenza gratuita.">
+  <meta property="og:url" content="https://oak-tree.com/contatti.html">
+  <meta property="og:image" content="https://via.placeholder.com/1200x630/e60000/ffffff?text=Contattaci">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Icons / PWA basics -->
+  <link rel="icon" type="image/x-icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTYiIGZpbGw9IiNlNjAwMDAiLz4KPHN2ZyB4PSI2IiB5PSI2IiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPgo8cGF0aCBkPSJNMTIgMkM4LjE0IDIgNSA1LjE0IDUgOWMwIDUuMjUgNyAxMyA3IDEzczctNy43NSA3LTEzYzAtMy44Ni0zLjE0LTctNy03em0wIDkuNUEyLjUgMi41IDAgMSAxIDEyIDZhMi41IDIuNSAwIDAgMSAwIDUuNXoiLz4KPC9zdmc+Cjwvc3ZnPgo=">
+  <meta name="theme-color" content="#e60000">
+
+  <!-- Fonts: preconnect + swap -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap">
+
+  <style>
+    /* Root variables - Vodafone Brand */
+    :root{
+      --vodafone-red:#e60000;
+      --vodafone-dark:#4a4a4a;
+      --vodafone-light:#f4f4f4;
+      --vodafone-dark-red:#cc0000;
+      --vodafone-white:#ffffff;
+      --vodafone-black:#000000;
+      --silver-gray:#f8fafc;
+      --dark-gray:#1e293b;
+      --medium-gray:#64748b;
+      --light-gray:#e2e8f0;
+      --card-radius:20px;
+      --card-bd:#e2e8f0;
+      --ink:#1e293b;
+      --muted:#64748b;
+      --ring:#ffe0e0;
+      --brand:#e60000;
+      --brand-dark:#b30000;
+      --contact-green:#059669;
+      --contact-green-dark:#047857;
+    }
+
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Evita qualsiasi scroll orizzontale fantasma */
+    html, body { 
+      overflow-x: hidden; 
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.6;
+      color: var(--vodafone-dark);
+      background: var(--vodafone-white);
+    }
+
+    /* Breadcrumb */
+    .breadcrumb {
+      background: var(--silver-gray);
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--light-gray);
+    }
+
+    .breadcrumb-container {
+      max-width: 1200px;
+      margin-inline: auto;
+      padding: 0 24px;
+    }
+
+    .breadcrumb-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .breadcrumb-nav a {
+      color: var(--brand);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .breadcrumb-nav a:hover {
+      color: var(--brand-dark);
+    }
+
+    .breadcrumb-separator {
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    /* Badge Contatti */
+    .badge-contatti {
+      background: var(--vodafone-red);
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 12px rgba(230,0,0,.2);
+    }
+    
+    .badge-contatti svg{
+      width:20px;
+      height:20px;
+      color:white;
+    }
+
+    /* CTA Primary con design pulito e puntini */
+    .cta-primary, .btn-primary {
+      background:#fff;
+      color:#e60000;
+      padding:14px 28px;
+      border:2px solid #e60000;
+      border-radius:25px;
+      font-weight:700;
+      cursor:pointer;
+      text-decoration:none;
+      display:inline-flex;
+      align-items:center;
+      gap:0.75rem;
+      font-size:1.1rem;
+      transition:all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow:0 4px 16px rgba(230,0,0,.15);
+      position:relative;
+      overflow:hidden;
+    }
+    
+    .cta-primary::before, .btn-primary::before{
+      content:"";
+      position:absolute;
+      top:0;
+      right:0;
+      width:60px;
+      height:100%;
+      background:
+        radial-gradient(circle at 15px 15px, rgba(230,0,0,.15) 2px, transparent 3px),
+        radial-gradient(circle at 35px 20px, rgba(230,0,0,.10) 1.5px, transparent 2.5px),
+        radial-gradient(circle at 25px 35px, rgba(230,0,0,.12) 2px, transparent 3px),
+        radial-gradient(circle at 45px 30px, rgba(230,0,0,.08) 1px, transparent 2px);
+      background-size:50px 50px;
+      opacity:0;
+      transition:opacity .3s ease;
+      pointer-events:none;
+    }
+
+    .cta-primary:hover, .btn-primary:hover {
+      background:#e60000;
+      color:#fff;
+      transform:translateY(-2px);
+      box-shadow:0 8px 25px rgba(230,0,0,.25);
+    }
+    
+    .cta-primary:hover::before, .btn-primary:hover::before{
+      opacity:0.6;
+    }
+
+    .cta-primary:active, .btn-primary:active {
+      transform:translateY(0);
+      box-shadow:0 4px 12px rgba(230,0,0,.2);
+    }
+
+    /* Buttons con design pulito moderno */
+    .btn{
+      border-radius:25px;
+      padding:14px 24px;
+      font-weight:700;
+      text-decoration:none;
+      display:inline-flex;
+      align-items:center;
+      gap:.75rem;
+      transition:all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      position:relative;
+      overflow:hidden;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-ghost{
+      background:#fff;
+      border:2px solid #f1f5f9;
+      color:#64748b;
+      box-shadow:0 4px 16px rgba(0,0,0,.08);
+    }
+
+    .btn-ghost:hover{
+      border-color:#e60000;
+      color:#e60000;
+      transform:translateY(-2px);
+      box-shadow:0 8px 20px rgba(230,0,0,.15);
+    }
+    
+    .btn-ghost:active{
+      transform: translateY(-1px);
+      box-shadow:0 4px 12px rgba(0,0,0,.1);
+    }
+
+    /* WhatsApp CTA Variant */
+    .btn-whatsapp {
+      background: linear-gradient(135deg, #25d366, #128c7e);
+      color: white;
+      border: none;
+      box-shadow: 0 8px 20px rgba(37,211,102,.3);
+    }
+
+    .btn-whatsapp:hover {
+      background: linear-gradient(135deg, #128c7e, #25d366);
+      box-shadow: 0 10px 25px rgba(37,211,102,.4);
+      color: white;
+    }
+
+    /* Contact Red Variant */
+    .btn-contact {
+      background: var(--vodafone-red);
+      color: white;
+      border: 2px solid var(--vodafone-red);
+    }
+
+    .btn-contact:hover {
+      background: var(--vodafone-dark-red);
+      border-color: var(--vodafone-dark-red);
+      color: white;
+    }
+
+    /* Card base - Bordo gradient/subtle */
+    .card{
+      position:relative;
+      border:1px solid rgba(226,232,240,.9);
+      background:
+        linear-gradient(#fff,#fff) padding-box,
+        linear-gradient(135deg, rgba(230,0,0,.25), rgba(230,0,0,0)) border-box;
+      border-radius:18px;
+      padding:24px;
+      box-shadow:0 6px 20px rgba(0,0,0,.06);
+      transition:all .3s cubic-bezier(0.4, 0, 0.2, 1);
+      overflow:hidden;
+      isolation:isolate;
+      max-width:100%;
+    }
+
+    /* Contact card variant */
+    .card.contact-card {
+      background:
+        linear-gradient(#fff,#fff) padding-box,
+        linear-gradient(135deg, rgba(230,0,0,.25), rgba(230,0,0,0)) border-box;
+    }
+
+    /* Hover pulito e tech */
+    .card:hover{
+      outline:0;
+      transform: translateY(-6px);
+      box-shadow:0 18px 46px rgba(230,0,0,.16);
+    }
+
+    .card.contact-card:hover {
+      box-shadow:0 18px 46px rgba(230,0,0,.16);
+    }
+
+    /* Icon ring con icone SVG semplici */
+    .icon-ring{
+      width:64px;
+      height:64px;
+      border-radius:18px;
+      display:grid;
+      place-items:center;
+      background:#e60000;
+      border:2px solid #e60000;
+      box-shadow:
+        0 0 12px rgba(230,0,0,.4),
+        0 0 24px rgba(230,0,0,.2),
+        0 4px 12px rgba(230,0,0,.25);
+      font-size:20px;
+      color:#fff;
+      margin:0 auto 16px;
+      transition:all .3s ease;
+      position:relative;
+      overflow:visible;
+    }
+
+    /* Contact icon variant */
+    .icon-ring.contact-icon {
+      background: var(--vodafone-red);
+      border-color: var(--vodafone-red);
+      box-shadow:
+        0 0 12px rgba(230,0,0,.4),
+        0 0 24px rgba(230,0,0,.2),
+        0 4px 12px rgba(230,0,0,.25);
+    }
+    
+    /* Icone SVG semplici */
+    .icon-ring svg{
+      width:24px;
+      height:24px;
+      stroke:#fff;
+      fill:none;
+      stroke-width:2;
+      stroke-linecap:round;
+      stroke-linejoin:round;
+    }
+    
+    /* Effetto neon più intenso al hover */
+    .card:hover .icon-ring{
+      background:#ff1a1a;
+      border-color:#ff1a1a;
+      transform:scale(1.05);
+      box-shadow:
+        0 0 20px rgba(255,26,26,.6),
+        0 0 40px rgba(255,26,26,.3),
+        0 0 60px rgba(255,26,26,.15),
+        0 8px 24px rgba(230,0,0,.4);
+    }
+
+    .card.contact-card:hover .icon-ring.contact-icon {
+      background: var(--vodafone-dark-red);
+      border-color: var(--vodafone-dark-red);
+      box-shadow:
+        0 0 20px rgba(204,0,0,.6),
+        0 0 40px rgba(204,0,0,.3),
+        0 0 60px rgba(204,0,0,.15),
+        0 8px 24px rgba(230,0,0,.4);
+    }
+    
+    /* Puntini piccoli e marcati intorno al cerchio */
+    .icon-ring::before{
+      content:"";
+      position:absolute;
+      inset:-10px;
+      background:
+        radial-gradient(circle at 10px 20px, rgba(230,0,0,.8) 1.5px, transparent 2px),
+        radial-gradient(circle at 30px 8px, rgba(230,0,0,.6) 1px, transparent 1.5px),
+        radial-gradient(circle at 50px 15px, rgba(230,0,0,.9) 2px, transparent 2.5px),
+        radial-gradient(circle at 70px 30px, rgba(230,0,0,.5) 1px, transparent 1.5px),
+        radial-gradient(circle at 80px 50px, rgba(230,0,0,.7) 1.5px, transparent 2px),
+        radial-gradient(circle at 70px 70px, rgba(230,0,0,.6) 1px, transparent 1.5px),
+        radial-gradient(circle at 50px 80px, rgba(230,0,0,.8) 2px, transparent 2.5px),
+        radial-gradient(circle at 30px 75px, rgba(230,0,0,.5) 1px, transparent 1.5px),
+        radial-gradient(circle at 10px 60px, rgba(230,0,0,.7) 1.5px, transparent 2px),
+        radial-gradient(circle at 5px 40px, rgba(230,0,0,.6) 1px, transparent 1.5px);
+      background-size:90px 90px;
+      opacity:0;
+      transition:opacity .3s ease;
+      border-radius:24px;
+      pointer-events:none;
+    }
+
+    .icon-ring.contact-icon::before {
+      background:
+        radial-gradient(circle at 10px 20px, rgba(230,0,0,.8) 1.5px, transparent 2px),
+        radial-gradient(circle at 30px 8px, rgba(230,0,0,.6) 1px, transparent 1.5px),
+        radial-gradient(circle at 50px 15px, rgba(230,0,0,.9) 2px, transparent 2.5px),
+        radial-gradient(circle at 70px 30px, rgba(230,0,0,.5) 1px, transparent 1.5px),
+        radial-gradient(circle at 80px 50px, rgba(230,0,0,.7) 1.5px, transparent 2px),
+        radial-gradient(circle at 70px 70px, rgba(230,0,0,.6) 1px, transparent 1.5px),
+        radial-gradient(circle at 50px 80px, rgba(230,0,0,.8) 2px, transparent 2.5px),
+        radial-gradient(circle at 30px 75px, rgba(230,0,0,.5) 1px, transparent 1.5px),
+        radial-gradient(circle at 10px 60px, rgba(230,0,0,.7) 1.5px, transparent 2px),
+        radial-gradient(circle at 5px 40px, rgba(230,0,0,.6) 1px, transparent 1.5px);
+      background-size:90px 90px;
+    }
+    
+    .card:hover .icon-ring::before{
+      opacity:1;
+    }
+
+    /* Titoli/para coerenti */
+    .card h3{
+      font-size:1.2rem;
+      color:var(--ink);
+      margin:6px 0 8px;
+      line-height:1.3;
+    }
+    
+    .card p{
+      color:var(--muted);
+      line-height:1.6;
+      font-size:0.95rem;
+    }
+
+    /* Navigation */
+    .brand-ribbon{
+      position:fixed;
+      inset:0 0 auto 0;
+      height:6px;
+      z-index:1200;
+      background: linear-gradient(90deg,#e60000 0%, #ff3b30 35%, #e60000 70%, #b30000 100%);
+      box-shadow:0 6px 20px rgba(230,0,0,.25);
+    }
+    
+    .navbar{
+      position:fixed;
+      top:6px;
+      width:100%;
+      background:rgba(255,255,255,.95);
+      backdrop-filter:blur(20px);
+      z-index:1000;
+      transition:all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      border-bottom:1px solid var(--card-bd);
+    }
+    
+    .navbar.scrolled{
+      background:rgba(255,255,255,.98);
+      box-shadow:0 8px 24px rgba(0,0,0,.06);
+    }
+
+    .nav-container{
+      max-width:1200px;
+      margin-inline:auto;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:0.8rem 24px;
+      gap:2rem;
+    }
+
+    .logo{
+      font-size:1.8rem;
+      font-weight:700;
+      background:linear-gradient(135deg, #e60000, #ff3333);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+      background-clip:text;
+      text-decoration:none;
+      display:flex;
+      align-items:center;
+      gap:0.5rem;
+      filter:drop-shadow(0 2px 8px rgba(230,0,0,.3));
+      transition:all 0.3s ease;
+      flex-shrink:0;
+    }
+
+    .nav-menu{
+      display:flex;
+      list-style:none;
+      gap:0.8rem;
+      align-items:center;
+      margin:0;
+      padding:0;
+      flex-wrap:wrap;
+    }
+
+    .nav-link{
+      text-decoration:none;
+      color:#1e293b;
+      font-weight:600;
+      position:relative;
+      transition:all 0.3s ease;
+      padding:0.6rem 0.8rem;
+      border-radius:8px;
+      font-size:0.9rem;
+      white-space:nowrap;
+      background-image: linear-gradient(#e60000,#e60000);
+      background-repeat: no-repeat;
+      background-size: 0% 2px;
+      background-position: 50% 100%;
+    }
+
+    .nav-link:hover{
+      color:#e60000;
+      transform:translateY(-1px);
+      background-size: 80% 2px;
+      background-color:rgba(230,0,0,0.05);
+    }
+
+    .nav-link.active {
+      color:#e60000;
+      background-size: 80% 2px;
+      background-color:rgba(230,0,0,0.1);
+    }
+
+    /* Mobile menu */
+    .mobile-menu-btn{
+      display:none;
+      flex-direction:column;
+      cursor:pointer;
+      padding:0.5rem;
+      z-index:1001;
+    }
+
+    .hamburger-line{
+      width:25px;
+      height:3px;
+      background:var(--vodafone-red);
+      margin:3px 0;
+      transition:all 0.3s ease;
+      border-radius:3px;
+    }
+
+    .mobile-menu{
+      display:none;
+      position:fixed;
+      top:80px;
+      left:0;
+      right:0;
+      max-height:calc(100vh - 80px);
+      background:rgba(255,255,255,.98);
+      backdrop-filter:blur(20px);
+      border-top:1px solid var(--card-bd);
+      padding:2rem;
+      z-index:999;
+      overflow-y:auto;
+      -webkit-overflow-scrolling:touch;
+      box-shadow:0 8px 32px rgba(0,0,0,.15);
+    }
+
+    .mobile-menu.active{
+      display:block;
+    }
+
+    .mobile-nav-links{
+      display:flex;
+      flex-direction:column;
+      gap:0.75rem;
+      max-width:400px;
+      margin:0 auto;
+    }
+
+    .mobile-nav-links .nav-link{
+      padding:1rem;
+      font-size:1rem;
+      margin-bottom:0;
+      border-radius:12px;
+      display:block;
+      text-decoration:none;
+      transition:all 0.3s ease;
+      text-align:center;
+      font-weight:600;
+      border:1px solid var(--card-bd);
+      background:#fff;
+      color:#1e293b;
+    }
+
+    .mobile-nav-links .nav-link:hover{
+      background:#fef2f2;
+      border-color:#e60000;
+      color:#e60000;
+    }
+
+    .mobile-nav-links .nav-link.active{
+      background:#fef2f2;
+      border-color:#e60000;
+      color:#e60000;
+    }
+
+    /* Page Header */
+    .page-header {
+      background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+      padding: 120px 24px 60px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .page-header.contact-header {
+      background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+    }
+
+    .page-header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: 
+        radial-gradient(60% 40% at 30% 70%, rgba(230,0,0,.08), transparent 60%),
+        conic-gradient(from 45deg at 80% 20%, rgba(230,0,0,.12), transparent 45% 75%, rgba(230,0,0,.06));
+      pointer-events: none;
+    }
+
+    .page-header.contact-header::before {
+      background: 
+        radial-gradient(60% 40% at 30% 70%, rgba(230,0,0,.08), transparent 60%),
+        conic-gradient(from 45deg at 80% 20%, rgba(230,0,0,.12), transparent 45% 75%, rgba(230,0,0,.06));
+    }
+
+    .page-header-container {
+      max-width: 1200px;
+      margin-inline: auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .page-title {
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-weight: 800;
+      color: var(--ink);
+      margin-bottom: 1rem;
+      line-height: 1.1;
+    }
+
+    .page-subtitle {
+      font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+      color: var(--muted);
+      margin-bottom: 2rem;
+      max-width: 60ch;
+    }
+
+    /* Section styles */
+    .section {
+      padding: 5rem 24px;
+    }
+
+    .section-container {
+      max-width: 1200px;
+      margin-inline: auto;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .section-tag {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--vodafone-red);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+    }
+
+    .section-tag.contact-tag {
+      color: var(--vodafone-red);
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      color: var(--ink);
+    }
+
+    .section-subtitle {
+      font-size: 1.2rem;
+      color: #475569;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Grid generica */
+    .grid{
+      display:grid;
+      gap:1.5rem;
+      grid-template-columns: repeat(12, minmax(0,1fr));
+      justify-items:center;
+      max-width:100%;
+    }
+    
+    .grid-2 > * {
+      grid-column: span 6;
+      width:100%;
+      max-width:450px;
+    }
+
+    .grid-3 > *{
+      grid-column: span 4;
+      width:100%;
+      max-width:350px;
+    }
+
+    .grid-4 > *{
+      grid-column: span 3;
+      width:100%;
+      max-width:280px;
+    }
+    
+    @media (max-width:1024px){
+      .grid-2 > * {
+        grid-column: span 6;
+        max-width:400px;
+      }
+      .grid-3 > *, .grid-4 > *{
+        grid-column: span 6;
+        max-width:380px;
+      }
+    }
+    
+    @media (max-width:640px){
+      .grid{
+        gap:1.25rem;
+      }
+      .grid-2 > *, .grid-3 > *, .grid-4 > *{
+        grid-column: span 12;
+        max-width:100%;
+        width:100%;
+      }
+    }
+
+    /* Contact Form Styles */
+    .contact-form-section {
+      background: white;
+      padding: 3rem;
+      border-radius: 24px;
+      border: 1px solid var(--light-gray);
+      box-shadow: 0 12px 32px rgba(0,0,0,.08);
+      margin-bottom: 3rem;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group {
+      position: relative;
+    }
+
+    .form-group.full-width {
+      grid-column: 1 / -1;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 0.5rem;
+    }
+
+    .form-label .required {
+      color: var(--brand);
+    }
+
+    .form-input, .form-textarea, .form-select {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid var(--light-gray);
+      border-radius: 12px;
+      font-family: inherit;
+      font-size: 1rem;
+      color: var(--ink);
+      background: white;
+      transition: all 0.3s ease;
+    }
+
+    .form-input:focus, .form-textarea:focus, .form-select:focus {
+      outline: none;
+      border-color: var(--vodafone-red);
+      box-shadow: 0 0 0 3px rgba(230,0,0,.1);
+    }
+
+    .form-textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .form-select {
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%2364748b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 16px center;
+      padding-right: 40px;
+    }
+
+    .form-checkbox-group {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      margin: 1.5rem 0;
+    }
+
+    .form-checkbox {
+      width: 20px;
+      height: 20px;
+      min-width: 20px;
+      margin-top: 2px;
+      cursor: pointer;
+      accent-color: var(--vodafone-red);
+    }
+
+    .form-checkbox-label {
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .form-checkbox-label a {
+      color: var(--brand);
+      text-decoration: none;
+    }
+
+    .form-checkbox-label a:hover {
+      text-decoration: underline;
+    }
+
+    .form-actions {
+      display: flex;
+      gap: 1rem;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: 2rem;
+    }
+
+    .form-note {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-right: auto;
+    }
+
+    /* Contact Methods */
+    .contact-method {
+      background: white;
+      padding: 2rem;
+      border-radius: 16px;
+      border: 1px solid var(--light-gray);
+      box-shadow: 0 4px 12px rgba(0,0,0,.08);
+      transition: all 0.3s ease;
+      text-align: center;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-method:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(230,0,0,.12);
+      border-color: rgba(230,0,0,.3);
+    }
+
+    .contact-method-icon {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 1rem;
+      background: linear-gradient(135deg, rgba(230,0,0,.1), rgba(230,0,0,.05));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+
+    .contact-method:hover .contact-method-icon {
+      background: linear-gradient(135deg, rgba(230,0,0,.2), rgba(230,0,0,.1));
+      transform: scale(1.1);
+    }
+
+    .contact-method-icon svg {
+      width: 28px;
+      height: 28px;
+      stroke: var(--vodafone-red);
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .contact-method h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-method p {
+      color: var(--muted);
+      margin-bottom: 1rem;
+      flex-grow: 1;
+    }
+
+    .contact-method a {
+      color: var(--vodafone-red);
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.3s ease;
+    }
+
+    .contact-method a:hover {
+      color: var(--vodafone-dark-red);
+      transform: translateX(4px);
+    }
+
+    /* Map Section */
+    .map-section {
+      background: var(--silver-gray);
+      padding: 4rem 0;
+      position: relative;
+    }
+
+    .map-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .map-wrapper {
+      background: white;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 12px 32px rgba(0,0,0,.08);
+    }
+
+    .map-iframe {
+      width: 100%;
+      height: 450px;
+      border: none;
+    }
+
+    /* FAQ Section */
+    .faq-section {
+      background: white;
+    }
+
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background: white;
+      border: 1px solid var(--light-gray);
+      border-radius: 16px;
+      margin-bottom: 1rem;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .faq-item:hover {
+      box-shadow: 0 8px 24px rgba(0,0,0,.08);
+    }
+
+    .faq-question {
+      padding: 1.5rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--ink);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease;
+    }
+
+    .faq-question:hover {
+      color: var(--vodafone-red);
+    }
+
+    .faq-toggle {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--silver-gray);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+
+    .faq-toggle svg {
+      width: 14px;
+      height: 14px;
+      stroke: var(--muted);
+      stroke-width: 2;
+      transition: all 0.3s ease;
+    }
+
+    .faq-item.active .faq-toggle {
+      background: var(--vodafone-red);
+    }
+
+    .faq-item.active .faq-toggle svg {
+      stroke: white;
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      padding: 0 1.5rem;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .faq-item.active .faq-answer {
+      padding: 0 1.5rem 1.5rem;
+      max-height: 500px;
+    }
+
+    .faq-answer p {
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    /* WhatsApp Button */
+    .whatsapp-btn{
+      position:fixed;
+      bottom:30px;
+      right:30px;
+      width:65px;
+      height:65px;
+      background:#25d366;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      text-decoration:none;
+      font-size:1.8rem;
+      box-shadow:0 8px 25px rgba(37,211,102,0.4);
+      z-index:1000;
+      transition:all 0.3s ease;
+    }
+
+    .whatsapp-btn:hover{
+      transform:scale(1.15);
+      box-shadow:0 15px 45px rgba(37,211,102,0.8);
+      color: white;
+    }
+
+    /* Mobile optimizations per schermi molto piccoli */
+    @media (max-width:768px){
+      .nav-container{
+        padding:0.8rem 16px;
+        gap:1rem;
+      }
+      .logo{
+        font-size:1.5rem;
+      }
+
+      .nav-menu{
+        display:none;
+      }
+      .mobile-menu-btn{
+        display:flex;
+      }
+
+      .page-header {
+        padding: 100px 16px 40px;
+      }
+
+      .section {
+        padding: 3rem 16px;
+      }
+
+      .contact-form-section {
+        padding: 2rem 1.5rem;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .form-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .form-note {
+        margin-right: 0;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+
+      .map-iframe {
+        height: 300px;
+      }
+
+      .whatsapp-btn{
+        width:60px;
+        height:60px;
+        font-size:1.6rem;
+        bottom:20px;
+        right:20px;
+      }
+
+      .mobile-menu-btn.active .hamburger-line:nth-child(1){
+        transform:rotate(-45deg) translate(-5px,6px);
+      }
+      .mobile-menu-btn.active .hamburger-line:nth-child(2){
+        opacity:0;
+      }
+      .mobile-menu-btn.active .hamburger-line:nth-child(3){
+        transform:rotate(45deg) translate(-5px,-6px);
+      }
+
+      .mobile-nav-links .nav-link{
+        padding:1.2rem;
+        font-size:1.1rem;
+        margin-bottom:0.5rem;
+      }
+    }
+
+    /* Skip link accessibility */
+    .skip-link:focus{
+      position:absolute;
+      left:12px;
+      top:12px;
+      background:#fff;
+      border:2px solid #e60000;
+      padding:8px 12px;
+      border-radius:10px;
+      z-index:2000;
+      text-decoration:none;
+      color:#e60000;
+      font-weight:600;
+    }
+
+    /* Focus styles accessibili */
+    :where(a,button,[tabindex]):focus-visible{
+      outline:3px solid rgba(230,0,0,.55);
+      outline-offset:3px;
+      border-radius:12px;
+    }
+
+    /* Animations */
+    @media (prefers-reduced-motion: no-preference){
+      .whatsapp-btn{
+        animation:whatsappPulse 3s ease-in-out infinite;
+      }
+    }
+    
+    @keyframes whatsappPulse{
+      0%,100%{
+        transform:scale(1);
+        box-shadow:0 8px 25px rgba(37,211,102,0.4);
+      }
+      50%{
+        transform:scale(1.05);
+        box-shadow:0 12px 35px rgba(37,211,102,0.6);
+      }
+    }
+  </style>
+
+  <!-- JSON-LD: BreadcrumbList + ContactPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://oak-tree.com/"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Contatti",
+      "item": "https://oak-tree.com/contatti.html"
+    }]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contatti Oak Tree Vodafone",
+    "description": "Molteplici modi per contattarci: WhatsApp, telefono, email, form online. Assistenza rapida e consulenza gratuita.",
+    "url": "https://oak-tree.com/contatti.html",
+    "mainEntity": {
+      "@type": "LocalBusiness",
+      "name": "Oak Tree - Rivenditore Autorizzato Vodafone",
+      "telephone": "+39 339 876 5432",
+      "email": "info@oak-tree.it",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Strada Statale dei Giovi 35",
+        "addressLocality": "Paderno Dugnano",
+        "postalCode": "20037",
+        "addressCountry": "IT"
+      }
+    }
+  }
+  </script>
+</head>
+<body>
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;">Salta ai contenuti</a>
+    
+    <!-- Brand ribbon -->
+    <div class="brand-ribbon"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span style="font-size:1.8rem;filter:drop-shadow(0 2px 8px rgba(230,0,0,.3));">🌳</span>
+                <span style="background:linear-gradient(135deg, #e60000, #ff3333);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Oak Tree</span>
+            </a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="privati.html" class="nav-link">Privati</a></li>
+                <li><a href="business.html" class="nav-link">Business</a></li>
+                <li><a href="servizi.html" class="nav-link">Servizi</a></li>
+                <li><a href="smartphone.html" class="nav-link">Smartphone</a></li>
+                <li><a href="chi-siamo.html" class="nav-link">Chi Siamo</a></li>
+                <li><a href="lavora-con-noi.html" class="nav-link">Lavora con Noi</a></li>
+                <li><a href="negozi.html" class="nav-link">I Nostri Negozi</a></li>
+                <li><a href="contatti.html" class="nav-link active">Contatti</a></li>
+            </ul>
+            
+            <div class="mobile-menu-btn" id="mobileMenuBtn" aria-controls="mobileMenu" aria-expanded="false">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </div>
+        </div>
+        
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-nav-links">
+                <a href="privati.html" class="nav-link">Privati & Famiglia</a>
+                <a href="business.html" class="nav-link">Business & P.IVA</a>
+                <a href="servizi.html" class="nav-link">Servizi & Assistenza</a>
+                <a href="smartphone.html" class="nav-link">Smartphone</a>
+                <a href="chi-siamo.html" class="nav-link">Chi Siamo</a>
+                <a href="lavora-con-noi.html" class="nav-link">Lavora con Noi</a>
+                <a href="negozi.html" class="nav-link">I Nostri Negozi</a>
+                <a href="contatti.html" class="nav-link active">Contatti</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="breadcrumb-container">
+            <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="breadcrumb-separator">›</span>
+                <span>Contatti</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <header class="page-header contact-header">
+        <div class="page-header-container">
+            <div class="badge-contatti">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                    <path d="M8 9h8"/>
+                    <path d="M8 13h6"/>
+                </svg>
+                <span>Siamo Qui per Te</span>
+            </div>
+            
+            <h1 class="page-title">Contattaci <span style="color:#e60000">Subito</span></h1>
+            <p class="page-subtitle">
+                Scegli il modo più comodo per contattarci: WhatsApp per risposte immediate, 
+                telefono per assistenza diretta o compila il form per richieste dettagliate.
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Contact Form Section -->
+        <section class="section" style="background: #f8fafc;">
+            <div class="section-container">
+                <div class="section-header">
+                    <div class="section-tag contact-tag">• RICHIEDI INFORMAZIONI</div>
+                    <h2 class="section-title">Compila il Form</h2>
+                    <p class="section-subtitle">
+                        Ti risponderemo entro 2 ore lavorative. Per urgenze usa WhatsApp o chiamaci direttamente.
+                    </p>
+                </div>
+
+                <div class="contact-form-section">
+                    <form id="contactForm" action="#" method="POST">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label class="form-label" for="nome">
+                                    Nome <span class="required">*</span>
+                                </label>
+                                <input type="text" id="nome" name="nome" class="form-input" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="cognome">
+                                    Cognome <span class="required">*</span>
+                                </label>
+                                <input type="text" id="cognome" name="cognome" class="form-input" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="email">
+                                    Email <span class="required">*</span>
+                                </label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="telefono">
+                                    Telefono <span class="required">*</span>
+                                </label>
+                                <input type="tel" id="telefono" name="telefono" class="form-input" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="tipo-cliente">
+                                    Tipo Cliente <span class="required">*</span>
+                                </label>
+                                <select id="tipo-cliente" name="tipo-cliente" class="form-select" required>
+                                    <option value="">Seleziona...</option>
+                                    <option value="privato">Privato</option>
+                                    <option value="famiglia">Famiglia</option>
+                                    <option value="business">Business</option>
+                                    <option value="piva">Partita IVA</option>
+                                    <option value="azienda">Azienda</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="servizio">
+                                    Servizio di Interesse
+                                </label>
+                                <select id="servizio" name="servizio" class="form-select">
+                                    <option value="">Seleziona...</option>
+                                    <option value="mobile">Offerte Mobile</option>
+                                    <option value="fibra">Fibra Casa</option>
+                                    <option value="business">Soluzioni Business</option>
+                                    <option value="smartphone">Smartphone</option>
+                                    <option value="assistenza">Assistenza Tecnica</option>
+                                    <option value="portabilita">Portabilità</option>
+                                    <option value="altro">Altro</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label class="form-label" for="messaggio">
+                                    Messaggio <span class="required">*</span>
+                                </label>
+                                <textarea id="messaggio" name="messaggio" class="form-textarea" required 
+                                          placeholder="Descrivi la tua richiesta in dettaglio..."></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-checkbox-group">
+                            <input type="checkbox" id="privacy" name="privacy" class="form-checkbox" required>
+                            <label for="privacy" class="form-checkbox-label">
+                                Ho letto e accetto l'<a href="privacy.html">informativa sulla privacy</a> e 
+                                autorizzo il trattamento dei miei dati personali per le finalità indicate. *
+                            </label>
+                        </div>
+
+                        <div class="form-checkbox-group">
+                            <input type="checkbox" id="marketing" name="marketing" class="form-checkbox">
+                            <label for="marketing" class="form-checkbox-label">
+                                Desidero ricevere comunicazioni promozionali e offerte personalizzate via email e SMS.
+                            </label>
+                        </div>
+
+                        <div class="form-actions">
+                            <span class="form-note">* Campi obbligatori</span>
+                            <button type="button" class="btn btn-ghost" onclick="this.form.reset()">Cancella</button>
+                            <button type="submit" class="btn btn-contact">Invia Richiesta</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Methods Section -->
+        <section class="section">
+            <div class="section-container">
+                <div class="section-header">
+                    <div class="section-tag contact-tag">• CONTATTI DIRETTI</div>
+                    <h2 class="section-title">Scegli Come Preferisci</h2>
+                    <p class="section-subtitle">
+                        Molteplici canali per raggiungerci: dal WhatsApp per risposte immediate 
+                        alla visita in negozio per consulenza personalizzata.
+                    </p>
+                </div>
+
+                <div class="grid grid-3">
+                    <div class="contact-method">
+                        <div class="contact-method-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                                <path d="M8 9h8"/>
+                                <path d="M8 13h6"/>
+                            </svg>
+                        </div>
+                        <h3>WhatsApp Business</h3>
+                        <p>Risposte immediate dal lunedì al sabato dalle 9:00 alle 19:00. Invia foto documenti e ricevi preventivi.</p>
+                        <a href="https://wa.me/393398765432?text=Ciao!%20Vorrei%20informazioni%20sulle%20vostre%20offerte.">
+                            Scrivi su WhatsApp →
+                        </a>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-method-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.11.37 2.31.57 3.58.57a1 1 0 0 1 1 1V21a1 1 0 0 1-1 1C10.85 22 2 13.15 2 2a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.27.2 2.47.57 3.58a1 1 0 0 1-.24 1.01l-2.2 2.2z"/>
+                            </svg>
+                        </div>
+                        <h3>Telefono</h3>
+                        <p>Chiamaci per assistenza immediata. Linea diretta con i nostri esperti, attiva negli orari di negozio.</p>
+                        <a href="tel:+393398765432">
+                            339 876 5432 →
+                        </a>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-method-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <rect x="2" y="4" width="20" height="16" rx="2" ry="2"/>
+                                <path d="m22 7-10 5L2 7"/>
+                            </svg>
+                        </div>
+                        <h3>Email</h3>
+                        <p>Per richieste dettagliate e documentazione. Risposta garantita entro 24 ore lavorative.</p>
+                        <a href="mailto:info@oak-tree.it">
+                            info@oak-tree.it →
+                        </a>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-method-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <h3>Negozi Fisici</h3>
+                        <p>Vieni a trovarci in uno dei nostri 3 negozi in Brianza. Consulenza gratuita senza appuntamento.</p>
+                        <a href="negozi.html">
+                            Trova il più vicino →
+                        </a>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-method-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                <line x1="12" y1="17" x2="12" y2="21"/>
+                            </svg>
+                        </div>
+                        <h3>Assistenza Remota</h3>
+                        <p>Supporto tecnico da remoto per configurazioni e problemi. Prenota una sessione TeamViewer.</p>
+                        <a href="https://wa.me/393398765432?text=Ciao!%20Vorrei%20prenotare%20assistenza%20remota.">
+                            Prenota assistenza →
+                        </a>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-method-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M8 2v4"/>
+                                <path d="M16 2v4"/>
+                                <rect x="3" y="4" width="18" height="18" rx="2"/>
+                                <path d="M3 10h18"/>
+                            </svg>
+                        </div>
+                        <h3>Appuntamento</h3>
+                        <p>Prenota un appuntamento dedicato per consulenza personalizzata senza attese.</p>
+                        <a href="https://wa.me/393398765432?text=Ciao!%20Vorrei%20prenotare%20un%20appuntamento.">
+                            Prenota ora →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <div class="map-container">
+                <div class="section-header">
+                    <div class="section-tag contact-tag">• SEDE PRINCIPALE</div>
+                    <h2 class="section-title">Vieni a Trovarci</h2>
+                    <p class="section-subtitle">
+                        Negozio principale presso CC Brianza Paderno Dugnano. 
+                        Ampio parcheggio gratuito e facilmente raggiungibile.
+                    </p>
+                </div>
+
+                <div class="map-wrapper">
+                    <iframe 
+                        class="map-iframe"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.7!2d9.162!3d45.571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDM0JzE2LjAiTiA5wrAwOSc0My4yIkU!5e0!3m2!1sit!2sit!4v1234567890"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Mappa negozio Oak Tree Vodafone Paderno Dugnano">
+                    </iframe>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                    <div style="text-align: center;">
+                        <h3 style="color: var(--contact-green); margin-bottom: 0.5rem;">🕐 Orari</h3>
+                        <p style="color: var(--muted);">
+                            Lunedì - Sabato: 09:30 - 19:30<br>
+                            Domenica: Chiuso<br>
+                            <small>Aperti anche in pausa pranzo</small>
+                        </p>
+                    </div>
+
+                    <div style="text-align: center;">
+                        <h3 style="color: var(--vodafone-red); margin-bottom: 0.5rem;">🚗 Come Raggiungerci</h3>
+                        <p style="color: var(--muted);">
+                            A4 Uscita Cormano<br>
+                            Linea S2/S4 Fermata Paderno<br>
+                            Parcheggio gratuito 500 posti
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section section">
+            <div class="faq-container">
+                <div class="section-header">
+                    <div class="section-tag contact-tag">• DOMANDE FREQUENTI</div>
+                    <h2 class="section-title">FAQ Contatti</h2>
+                    <p class="section-subtitle">
+                        Le risposte alle domande più comuni sui nostri servizi di contatto e assistenza.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Quali sono i tempi di risposta?</span>
+                        <div class="faq-toggle">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9l6 6 6-6" stroke="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>WhatsApp: risposta entro 30 minuti in orario lavorativo. Email: entro 24 ore lavorative. Telefono: immediato negli orari di apertura. Form online: entro 2 ore lavorative.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Posso richiedere un preventivo personalizzato?</span>
+                        <div class="faq-toggle">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9l6 6 6-6" stroke="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Certamente! Puoi richiedere un preventivo gratuito e senza impegno tramite WhatsApp, email o compilando il form. Per le aziende offriamo anche analisi complete dei costi attuali con proposta di risparmio.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Offrite assistenza anche dopo l'acquisto?</span>
+                        <div class="faq-toggle">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9l6 6 6-6" stroke="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Assolutamente sì! L'assistenza post-vendita è uno dei nostri punti di forza. Siamo sempre disponibili per configurazioni, problemi tecnici, modifiche contrattuali e qualsiasi necessità. I clienti business hanno un account manager dedicato.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>È necessario prendere appuntamento per venire in negozio?</span>
+                        <div class="faq-toggle">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9l6 6 6-6" stroke="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, non è necessario. Puoi venire quando vuoi negli orari di apertura. Tuttavia, per garantirti zero attese e un servizio dedicato, consigliamo di prenotare un appuntamento tramite WhatsApp o telefono.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Fate consulenze a domicilio per aziende?</span>
+                        <div class="faq-toggle">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9l6 6 6-6" stroke="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sì, per le aziende offriamo consulenza direttamente presso la vostra sede. Il servizio è gratuito per contratti business sopra i 10 utenti. Analizziamo l'infrastruttura esistente e proponiamo soluzioni su misura.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section" style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);">
+            <div class="section-container">
+                <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                    <h2 style="font-size: clamp(28px,4vw,42px); font-weight: 800; color: #1e293b; margin-bottom: 1.5rem;">
+                        Non Perdere Tempo
+                    </h2>
+                    <p style="font-size: 1.2rem; color: #64748b; margin-bottom: 3rem; line-height: 1.7;">
+                        Scegli il canale più comodo per te e contattaci subito. 
+                        Ti garantiamo risposta rapida, consulenza professionale e soluzioni su misura.
+                    </p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+                        <a href="https://wa.me/393398765432?text=Ciao!%20Vorrei%20informazioni%20sulle%20vostre%20offerte." class="btn btn-whatsapp">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.123-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                            </svg>
+                            WhatsApp Immediato
+                        </a>
+                        <a href="tel:+393398765432" class="btn btn-contact">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.11.37 2.31.57 3.58.57a1 1 0 0 1 1 1V21a1 1 0 0 1-1 1C10.85 22 2 13.15 2 2a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.27.2 2.47.57 3.58a1 1 0 0 1-.24 1.01l-2.2 2.2z"/>
+                            </svg>
+                            Chiama Ora
+                        </a>
+                        <a href="negozi.html" class="btn btn-ghost">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            Vieni in Negozio
+                        </a>
+                    </div>
+
+                    <!-- Trust Badge -->
+                    <div style="margin-top: 3rem; padding-top: 3rem; border-top: 1px solid rgba(230,0,0,.2);">
+                        <div style="display: flex; flex-wrap: wrap; gap: 3rem; justify-content: center; align-items: center;">
+                            <div style="text-align: center;">
+                                <div style="font-size: 2rem; font-weight: 800; color: var(--vodafone-red);">98%</div>
+                                <div style="color: var(--muted); font-size: 0.9rem;">Clienti Soddisfatti</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 2rem; font-weight: 800; color: var(--vodafone-red);">< 2h</div>
+                                <div style="color: var(--muted); font-size: 0.9rem;">Tempo Risposta</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 2rem; font-weight: 800; color: var(--vodafone-red);">7/7</div>
+                                <div style="color: var(--muted); font-size: 0.9rem;">Giorni Assistenza</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 2rem; font-weight: 800; color: var(--vodafone-red);">3</div>
+                                <div style="color: var(--muted); font-size: 0.9rem;">Negozi in Brianza</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/393398765432?text=Ciao!%20Ho%20bisogno%20di%20assistenza." class="whatsapp-btn" aria-label="Contattaci su WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.123-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <script>
+        // JavaScript per la pagina Contatti
+        const navbar = document.getElementById('navbar');
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        // Navbar scroll
+        window.addEventListener('scroll', function(){
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+        
+        // Mobile menu con scroll ottimizzato
+        function toggleMenu(open){
+            const isOpen = open !== undefined ? open : !mobileMenuBtn.classList.contains('active');
+            mobileMenuBtn.classList.toggle('active', isOpen);
+            mobileMenu.classList.toggle('active', isOpen);
+            mobileMenuBtn.setAttribute('aria-expanded', isOpen);
+            
+            if(isOpen) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        }
+        
+        if(mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', function(){
+                toggleMenu();
+            });
+        }
+        
+        if(mobileMenu) {
+            mobileMenu.querySelectorAll('a').forEach(function(a){
+                a.addEventListener('click', function(){
+                    if(this.getAttribute('href').startsWith('#')){
+                        toggleMenu(false);
+                    }
+                });
+            });
+        }
+        
+        // FAQ Toggle
+        function toggleFAQ(element) {
+            const faqItem = element.parentElement;
+            const wasActive = faqItem.classList.contains('active');
+            
+            // Close all FAQs
+            document.querySelectorAll('.faq-item').forEach(function(item) {
+                item.classList.remove('active');
+            });
+            
+            // Open clicked FAQ if it wasn't active
+            if (!wasActive) {
+                faqItem.classList.add('active');
+            }
+        }
+        
+        // Form Submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Here you would normally send the data to your server
+            console.log('Form submitted:', data);
+            
+            // Show success message
+            alert('Grazie per averci contattato! Ti risponderemo entro 2 ore lavorative.');
+            
+            // Reset form
+            this.reset();
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(function(anchor){
+            anchor.addEventListener('click', function(e){
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if(target) {
+                    target.scrollIntoView({behavior:'smooth', block:'start'});
+                }
+            });
+        });
+
+        // Highlight current page in navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPage = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            navLinks.forEach(function(link) {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
