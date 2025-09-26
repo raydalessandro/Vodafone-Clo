@@ -1,0 +1,1573 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>I Nostri Negozi Vodafone Milano | Oak Tree</title>
+  <meta name="description" content="3 negozi Vodafone a Milano e Brianza: Paderno Dugnano, Giussano e Villa Santa. Orari, indicazioni stradali e servizi disponibili in ogni store.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://oak-tree.com/negozi.html">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:site_name" content="Oak Tree">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="I Nostri Negozi - Oak Tree">
+  <meta property="og:description" content="Trova il negozio Vodafone più vicino a Milano e Brianza. Assistenza, attivazioni e consulenza personalizzata.">
+  <meta property="og:url" content="https://oak-tree.com/negozi.html">
+  <meta property="og:image" content="https://via.placeholder.com/1200x630/e60000/ffffff?text=Negozi+Vodafone">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Icons / PWA basics -->
+  <link rel="icon" type="image/x-icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTYiIGZpbGw9IiNlNjAwMDAiLz4KPHN2ZyB4PSI2IiB5PSI2IiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPgo8cGF0aCBkPSJNMTIgMkM4LjE0IDIgNSA1LjE0IDUgOWMwIDUuMjUgNyAxMyA3IDEzczctNy43NSA3LTEzYzAtMy44Ni0zLjE0LTctNy03em0wIDkuNUEyLjUgMi41IDAgMSAxIDEyIDZhMi41IDIuNSAwIDAgMSAwIDUuNXoiLz4KPC9zdmc+Cjwvc3ZnPgo=">
+  <meta name="theme-color" content="#e60000">
+
+  <!-- Fonts: preconnect + swap -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap">
+
+  <style>
+    /* Root variables - Vodafone Brand */
+    :root{
+      --vodafone-red:#e60000;
+      --vodafone-dark:#4a4a4a;
+      --vodafone-light:#f4f4f4;
+      --vodafone-dark-red:#cc0000;
+      --vodafone-white:#ffffff;
+      --vodafone-black:#000000;
+      --silver-gray:#f8fafc;
+      --dark-gray:#1e293b;
+      --medium-gray:#64748b;
+      --light-gray:#e2e8f0;
+      --card-radius:20px;
+      --card-bd:#e2e8f0;
+      --ink:#1e293b;
+      --muted:#64748b;
+      --ring:#ffe0e0;
+      --brand:#e60000;
+      --brand-dark:#b30000;
+      --success-green:#22c55e;
+      --warning-orange:#f97316;
+    }
+
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Evita qualsiasi scroll orizzontale fantasma */
+    html, body { 
+      overflow-x: hidden; 
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.6;
+      color: var(--vodafone-dark);
+      background: var(--vodafone-white);
+    }
+
+    /* Breadcrumb */
+    .breadcrumb {
+      background: var(--silver-gray);
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--light-gray);
+    }
+
+    .breadcrumb-container {
+      max-width: 1200px;
+      margin-inline: auto;
+      padding: 0 24px;
+    }
+
+    .breadcrumb-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .breadcrumb-nav a {
+      color: var(--brand);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .breadcrumb-nav a:hover {
+      color: var(--brand-dark);
+    }
+
+    .breadcrumb-separator {
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    /* Badge Ufficiale Vodafone */
+    .badge-ufficiale {
+      background: var(--vodafone-red);
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 12px rgba(230,0,0,.2);
+    }
+    
+    .badge-ufficiale svg{
+      width:20px;
+      height:20px;
+      color:white;
+    }
+
+    /* Store Card */
+    .store-card {
+      background: white;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0,0,0,.08);
+      transition: all 0.3s ease;
+      position: relative;
+      border: 1px solid var(--light-gray);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .store-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 40px rgba(230,0,0,.15);
+      border-color: rgba(230,0,0,.2);
+    }
+
+    .store-header {
+      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      padding: 2rem;
+      position: relative;
+    }
+
+    .store-badge {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: var(--success-green);
+      color: white;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .store-badge.closed {
+      background: var(--warning-orange);
+    }
+
+    .store-icon {
+      width: 60px;
+      height: 60px;
+      background: var(--brand);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 12px rgba(230,0,0,.3);
+    }
+
+    .store-icon svg {
+      width: 28px;
+      height: 28px;
+      stroke: white;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .store-name {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 0.5rem;
+    }
+
+    .store-address {
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .store-body {
+      padding: 1.5rem 2rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .store-info {
+      display: grid;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .info-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+
+    .info-icon {
+      width: 20px;
+      height: 20px;
+      color: var(--brand);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .info-content {
+      flex: 1;
+    }
+
+    .info-label {
+      font-size: 0.85rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.25rem;
+      font-weight: 600;
+    }
+
+    .info-value {
+      color: var(--ink);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .hours-grid {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 0.5rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    .hours-day {
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .hours-time {
+      color: var(--ink);
+      font-weight: 600;
+      text-align: right;
+    }
+
+    .hours-closed {
+      color: var(--warning-orange);
+    }
+
+    .store-services {
+      border-top: 1px solid var(--light-gray);
+      padding-top: 1.5rem;
+      margin-top: auto;
+    }
+
+    .services-title {
+      font-size: 0.85rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.75rem;
+      font-weight: 600;
+    }
+
+    .service-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .service-tag {
+      background: var(--silver-gray);
+      padding: 4px 10px;
+      border-radius: 12px;
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .store-actions {
+      border-top: 1px solid var(--light-gray);
+      padding: 1.5rem 2rem;
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    .store-actions .btn {
+      flex: 1;
+      justify-content: center;
+      padding: 12px 16px;
+      font-size: 0.9rem;
+    }
+
+    /* Map Section */
+    .map-container {
+      background: var(--silver-gray);
+      padding: 2rem;
+      border-radius: 20px;
+      margin-bottom: 2rem;
+      min-height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .map-placeholder {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .map-icon {
+      width: 80px;
+      height: 80px;
+      background: var(--brand);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+      box-shadow: 0 8px 24px rgba(230,0,0,.3);
+    }
+
+    .map-icon svg {
+      width: 40px;
+      height: 40px;
+      stroke: white;
+      fill: none;
+      stroke-width: 2;
+    }
+
+    /* Buttons */
+    .btn{
+      border-radius:25px;
+      padding:14px 24px;
+      font-weight:700;
+      text-decoration:none;
+      display:inline-flex;
+      align-items:center;
+      gap:.75rem;
+      transition:all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      position:relative;
+      overflow:hidden;
+      font-size: 1rem;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary {
+      background:#e60000;
+      color:#fff;
+      box-shadow:0 4px 16px rgba(230,0,0,.15);
+    }
+    
+    .btn-primary:hover {
+      background:#cc0000;
+      transform:translateY(-2px);
+      box-shadow:0 8px 25px rgba(230,0,0,.25);
+    }
+
+    .btn-ghost{
+      background:#fff;
+      border:2px solid #f1f5f9;
+      color:#64748b;
+      box-shadow:0 4px 16px rgba(0,0,0,.08);
+    }
+
+    .btn-ghost:hover{
+      border-color:#e60000;
+      color:#e60000;
+      transform:translateY(-2px);
+      box-shadow:0 8px 20px rgba(230,0,0,.15);
+    }
+
+    .btn-whatsapp {
+      background: linear-gradient(135deg, #25d366, #128c7e);
+      color: white;
+      border: none;
+      box-shadow: 0 8px 20px rgba(37,211,102,.3);
+    }
+
+    .btn-whatsapp:hover {
+      background: linear-gradient(135deg, #128c7e, #25d366);
+      box-shadow: 0 10px 25px rgba(37,211,102,.4);
+      color: white;
+    }
+
+    /* Navigation */
+    .brand-ribbon{
+      position:fixed;
+      inset:0 0 auto 0;
+      height:6px;
+      z-index:1200;
+      background: linear-gradient(90deg,#e60000 0%, #ff3b30 35%, #e60000 70%, #b30000 100%);
+      box-shadow:0 6px 20px rgba(230,0,0,.25);
+    }
+    
+    .navbar{
+      position:fixed;
+      top:6px;
+      width:100%;
+      background:rgba(255,255,255,.95);
+      backdrop-filter:blur(20px);
+      z-index:1000;
+      transition:all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      border-bottom:1px solid var(--card-bd);
+    }
+    
+    .navbar.scrolled{
+      background:rgba(255,255,255,.98);
+      box-shadow:0 8px 24px rgba(0,0,0,.06);
+    }
+
+    .nav-container{
+      max-width:1200px;
+      margin-inline:auto;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:0.8rem 24px;
+      gap:2rem;
+    }
+
+    .logo{
+      font-size:1.8rem;
+      font-weight:700;
+      background:linear-gradient(135deg, #e60000, #ff3333);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+      background-clip:text;
+      text-decoration:none;
+      display:flex;
+      align-items:center;
+      gap:0.5rem;
+      filter:drop-shadow(0 2px 8px rgba(230,0,0,.3));
+      transition:all 0.3s ease;
+      flex-shrink:0;
+    }
+
+    .nav-menu{
+      display:flex;
+      list-style:none;
+      gap:0.8rem;
+      align-items:center;
+      margin:0;
+      padding:0;
+      flex-wrap:wrap;
+    }
+
+    .nav-link{
+      text-decoration:none;
+      color:#1e293b;
+      font-weight:600;
+      position:relative;
+      transition:all 0.3s ease;
+      padding:0.6rem 0.8rem;
+      border-radius:8px;
+      font-size:0.9rem;
+      white-space:nowrap;
+      background-image: linear-gradient(#e60000,#e60000);
+      background-repeat: no-repeat;
+      background-size: 0% 2px;
+      background-position: 50% 100%;
+    }
+
+    .nav-link:hover{
+      color:#e60000;
+      transform:translateY(-1px);
+      background-size: 80% 2px;
+      background-color:rgba(230,0,0,0.05);
+    }
+
+    .nav-link.active {
+      color:#e60000;
+      background-size: 80% 2px;
+      background-color:rgba(230,0,0,0.1);
+    }
+
+    /* Mobile menu */
+    .mobile-menu-btn{
+      display:none;
+      flex-direction:column;
+      cursor:pointer;
+      padding:0.5rem;
+      z-index:1001;
+    }
+
+    .hamburger-line{
+      width:25px;
+      height:3px;
+      background:var(--vodafone-red);
+      margin:3px 0;
+      transition:all 0.3s ease;
+      border-radius:3px;
+    }
+
+    .mobile-menu{
+      display:none;
+      position:fixed;
+      top:80px;
+      left:0;
+      right:0;
+      max-height:calc(100vh - 80px);
+      background:rgba(255,255,255,.98);
+      backdrop-filter:blur(20px);
+      border-top:1px solid var(--card-bd);
+      padding:2rem;
+      z-index:999;
+      overflow-y:auto;
+      -webkit-overflow-scrolling:touch;
+      box-shadow:0 8px 32px rgba(0,0,0,.15);
+    }
+
+    .mobile-menu.active{
+      display:block;
+    }
+
+    .mobile-nav-links{
+      display:flex;
+      flex-direction:column;
+      gap:0.75rem;
+      max-width:400px;
+      margin:0 auto;
+    }
+
+    .mobile-nav-links .nav-link{
+      padding:1rem;
+      font-size:1rem;
+      margin-bottom:0;
+      border-radius:12px;
+      display:block;
+      text-decoration:none;
+      transition:all 0.3s ease;
+      text-align:center;
+      font-weight:600;
+      border:1px solid var(--card-bd);
+      background:#fff;
+      color:#1e293b;
+    }
+
+    .mobile-nav-links .nav-link:hover{
+      background:#fef2f2;
+      border-color:#e60000;
+      color:#e60000;
+    }
+
+    .mobile-nav-links .nav-link.active{
+      background:#fef2f2;
+      border-color:#e60000;
+      color:#e60000;
+    }
+
+    /* Page Header */
+    .page-header {
+      background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+      padding: 120px 24px 60px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .page-header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: 
+        radial-gradient(60% 40% at 30% 70%, rgba(230,0,0,.08), transparent 60%),
+        conic-gradient(from 45deg at 80% 20%, rgba(230,0,0,.12), transparent 45% 75%, rgba(230,0,0,.06));
+      pointer-events: none;
+    }
+
+    .page-header-container {
+      max-width: 1200px;
+      margin-inline: auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .page-title {
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-weight: 800;
+      color: var(--ink);
+      margin-bottom: 1rem;
+      line-height: 1.1;
+    }
+
+    .page-subtitle {
+      font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+      color: var(--muted);
+      margin-bottom: 2rem;
+      max-width: 60ch;
+    }
+
+    .page-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+      max-width: 600px;
+    }
+
+    .stat-item {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      background: rgba(255,255,255,0.8);
+      border: 1px solid var(--light-gray);
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,.08);
+      transition: all 0.3s ease;
+    }
+
+    .stat-item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(230,0,0,.12);
+      border-color: rgba(230,0,0,.3);
+    }
+
+    .stat-number {
+      display: block;
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--brand);
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-label {
+      font-size: 0.9rem;
+      color: var(--muted);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Section styles */
+    .section {
+      padding: 5rem 24px;
+    }
+
+    .section-container {
+      max-width: 1200px;
+      margin-inline: auto;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .section-tag {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--vodafone-red);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      color: var(--ink);
+    }
+
+    .section-subtitle {
+      font-size: 1.2rem;
+      color: #475569;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Grid generica */
+    .grid{
+      display:grid;
+      gap:2rem;
+      grid-template-columns: repeat(12, minmax(0,1fr));
+      max-width:100%;
+    }
+    
+    .grid-3 > *{
+      grid-column: span 4;
+      width:100%;
+    }
+    
+    @media (max-width:1024px){
+      .grid-3 > *{
+        grid-column: span 6;
+      }
+    }
+    
+    @media (max-width:640px){
+      .grid{
+        gap:1.5rem;
+      }
+      .grid-3 > *{
+        grid-column: span 12;
+      }
+    }
+
+    /* CTA Section */
+    .cta-section{
+      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      padding:5rem 24px;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .cta-section::before{
+      content:"";
+      position:absolute;
+      inset:0 0 auto 0;
+      height:1px;
+      background:linear-gradient(90deg, transparent, rgba(230,0,0,.3), transparent);
+    }
+
+    .cta-container{
+      max-width:800px;
+      margin:0 auto;
+      text-align:center;
+    }
+
+    .cta-title{
+      font-size:clamp(28px,4vw,42px);
+      font-weight:800;
+      color:#1e293b;
+      margin-bottom:1.5rem;
+    }
+
+    .cta-subtitle{
+      font-size:1.2rem;
+      color:#64748b;
+      margin-bottom:3rem;
+      line-height:1.7;
+    }
+
+    .cta-buttons{
+      display:flex;
+      flex-wrap:wrap;
+      gap:1rem;
+      justify-content:center;
+    }
+
+    /* WhatsApp Button */
+    .whatsapp-btn{
+      position:fixed;
+      bottom:30px;
+      right:30px;
+      width:65px;
+      height:65px;
+      background:#25d366;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      text-decoration:none;
+      font-size:1.8rem;
+      box-shadow:0 8px 25px rgba(37,211,102,0.4);
+      z-index:1000;
+      transition:all 0.3s ease;
+    }
+
+    .whatsapp-btn:hover{
+      transform:scale(1.15);
+      box-shadow:0 15px 45px rgba(37,211,102,0.8);
+      color: white;
+    }
+
+    /* Mobile optimizations */
+    @media (max-width:768px){
+      .nav-container{
+        padding:0.8rem 16px;
+        gap:1rem;
+      }
+      .logo{
+        font-size:1.5rem;
+      }
+
+      .nav-menu{
+        display:none;
+      }
+      .mobile-menu-btn{
+        display:flex;
+      }
+
+      .page-header {
+        padding: 100px 16px 40px;
+      }
+
+      .page-stats {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+      }
+
+      .stat-item {
+        padding: 1.2rem 0.8rem;
+      }
+
+      .stat-number {
+        font-size: 1.4rem;
+      }
+
+      .section {
+        padding: 3rem 16px;
+      }
+
+      .store-card {
+        max-width: 100%;
+      }
+
+      .store-actions {
+        flex-direction: column;
+      }
+
+      .whatsapp-btn{
+        width:60px;
+        height:60px;
+        font-size:1.6rem;
+        bottom:20px;
+        right:20px;
+      }
+
+      .mobile-menu-btn.active .hamburger-line:nth-child(1){
+        transform:rotate(-45deg) translate(-5px,6px);
+      }
+      .mobile-menu-btn.active .hamburger-line:nth-child(2){
+        opacity:0;
+      }
+      .mobile-menu-btn.active .hamburger-line:nth-child(3){
+        transform:rotate(45deg) translate(-5px,-6px);
+      }
+
+      .cta-buttons{
+        flex-direction:column;
+        align-items:stretch;
+        gap:1.5rem;
+      }
+    }
+
+    @media (max-width:480px){
+      .page-stats{
+        grid-template-columns:repeat(3,1fr);
+        gap:0.5rem;
+      }
+      
+      .stat-item{
+        padding:1rem 0.6rem;
+      }
+      
+      .stat-number{
+        font-size:1.2rem;
+        font-weight:800;
+      }
+      
+      .stat-label{
+        font-size:0.7rem;
+        line-height:1.2;
+      }
+    }
+
+    /* Skip link accessibility */
+    .skip-link:focus{
+      position:absolute;
+      left:12px;
+      top:12px;
+      background:#fff;
+      border:2px solid #e60000;
+      padding:8px 12px;
+      border-radius:10px;
+      z-index:2000;
+      text-decoration:none;
+      color:#e60000;
+      font-weight:600;
+    }
+
+    /* Focus styles accessibili */
+    :where(a,button,[tabindex]):focus-visible{
+      outline:3px solid rgba(230,0,0,.55);
+      outline-offset:3px;
+      border-radius:12px;
+    }
+
+    /* Animations */
+    @media (prefers-reduced-motion: no-preference){
+      .whatsapp-btn{
+        animation:whatsappPulse 3s ease-in-out infinite;
+      }
+    }
+    
+    @keyframes whatsappPulse{
+      0%,100%{
+        transform:scale(1);
+        box-shadow:0 8px 25px rgba(37,211,102,0.4);
+      }
+      50%{
+        transform:scale(1.05);
+        box-shadow:0 12px 35px rgba(37,211,102,0.6);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-in {
+      animation: fadeInUp 0.6s ease-out forwards;
+    }
+  </style>
+
+  <!-- JSON-LD: LocalBusiness Schema -->
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "Oak Tree Vodafone - Paderno Dugnano",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Strada Statale dei Giovi, 35",
+      "addressLocality": "Paderno Dugnano",
+      "postalCode": "20037",
+      "addressCountry": "IT"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 45.571,
+      "longitude": 9.162
+    },
+    "telephone": "+393398765432",
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "09:30",
+      "closes": "19:30"
+    }]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "Oak Tree Vodafone - Giussano",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via Prealpi, 74",
+      "addressLocality": "Giussano",
+      "postalCode": "20833",
+      "addressCountry": "IT"
+    },
+    "telephone": "+393398765432",
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "09:30",
+      "closes": "19:30"
+    }]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "Oak Tree Vodafone - Villa Santa",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via Tiziano De Celio, 2",
+      "addressLocality": "Villa Santa",
+      "postalCode": "20838",
+      "addressCountry": "IT"
+    },
+    "telephone": "+393398765432",
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "09:00",
+      "closes": "20:00"
+    }]
+  }]
+  </script>
+</head>
+<body>
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;">Salta ai contenuti</a>
+    
+    <!-- Brand ribbon -->
+    <div class="brand-ribbon"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span style="font-size:1.8rem;filter:drop-shadow(0 2px 8px rgba(230,0,0,.3));">🌳</span>
+                <span style="background:linear-gradient(135deg, #e60000, #ff3333);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Oak Tree</span>
+            </a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="privati.html" class="nav-link">Privati</a></li>
+                <li><a href="business.html" class="nav-link">Business</a></li>
+                <li><a href="servizi.html" class="nav-link">Servizi</a></li>
+                <li><a href="smartphone.html" class="nav-link">Smartphone</a></li>
+                <li><a href="chi-siamo.html" class="nav-link">Chi Siamo</a></li>
+                <li><a href="lavora-con-noi.html" class="nav-link">Lavora con Noi</a></li>
+                <li><a href="negozi.html" class="nav-link active">I Nostri Negozi</a></li>
+                <li><a href="contatti.html" class="nav-link">Contatti</a></li>
+            </ul>
+            
+            <div class="mobile-menu-btn" id="mobileMenuBtn" aria-controls="mobileMenu" aria-expanded="false">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </div>
+        </div>
+        
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-nav-links">
+                <a href="privati.html" class="nav-link">Privati & Famiglia</a>
+                <a href="business.html" class="nav-link">Business & P.IVA</a>
+                <a href="servizi.html" class="nav-link">Servizi & Assistenza</a>
+                <a href="smartphone.html" class="nav-link">Smartphone</a>
+                <a href="chi-siamo.html" class="nav-link">Chi Siamo</a>
+                <a href="lavora-con-noi.html" class="nav-link">Lavora con Noi</a>
+                <a href="negozi.html" class="nav-link active">I Nostri Negozi</a>
+                <a href="contatti.html" class="nav-link">Contatti</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="breadcrumb-container">
+            <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="breadcrumb-separator">›</span>
+                <span>I Nostri Negozi</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="page-header-container">
+            <div class="badge-ufficiale">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                </svg>
+                <span>3 Negozi in Brianza</span>
+            </div>
+            
+            <h1 class="page-title">I Nostri <span style="color:#e60000">Negozi</span></h1>
+            <p class="page-subtitle">
+                3 punti vendita strategici a Milano e Brianza. Assistenza professionale, 
+                attivazioni immediate e consulenza personalizzata in ogni store.
+            </p>
+
+            <div class="page-stats">
+                <div class="stat-item">
+                    <span class="stat-number">Lun-Sab</span>
+                    <span class="stat-label">Sempre aperti</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">10min</span>
+                    <span class="stat-label">Attesa media</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">P Free</span>
+                    <span class="stat-label">Parcheggio</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Stores Section -->
+        <section class="section">
+            <div class="section-container">
+                <div class="section-header">
+                    <div class="section-tag">• VIENI A TROVARCI</div>
+                    <h2 class="section-title">Trova il Negozio Più Vicino</h2>
+                    <p class="section-subtitle">
+                        Tutti i nostri negozi sono facilmente raggiungibili con ampio parcheggio gratuito. 
+                        Staff esperto e multilingue ti aspetta per ogni esigenza.
+                    </p>
+                </div>
+
+                <div class="grid grid-3">
+                    <!-- Paderno Dugnano Store -->
+                    <article class="store-card" id="paderno-dugnano">
+                        <div class="store-header">
+                            <span class="store-badge" data-hours="09:30-19:30">APERTO ORA</span>
+                            <div class="store-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M3 21h18"/>
+                                    <path d="M5 21V7l8-4v18"/>
+                                    <path d="M19 21V11l-6-4"/>
+                                </svg>
+                            </div>
+                            <h3 class="store-name">CC Brianza</h3>
+                            <address class="store-address">
+                                Strada Statale dei Giovi, 35<br>
+                                20037 Paderno Dugnano (MI)
+                            </address>
+                        </div>
+                        
+                        <div class="store-body">
+                            <div class="store-info">
+                                <div class="info-row">
+                                    <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <polyline points="12,6 12,12 16,14"/>
+                                    </svg>
+                                    <div class="info-content">
+                                        <div class="info-label">Orari</div>
+                                        <div class="hours-grid">
+                                            <span class="hours-day">Lun-Sab:</span>
+                                            <span class="hours-time">09:30 - 19:30</span>
+                                            <span class="hours-day">Domenica:</span>
+                                            <span class="hours-time hours-closed">Chiuso</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="info-row">
+                                    <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.11.37 2.31.57 3.58.57a1 1 0 0 1 1 1V21a1 1 0 0 1-1 1C10.85 22 2 13.15 2 2a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.27.2 2.47.57 3.58a1 1 0 0 1-.24 1.01l-2.2 2.2z"/>
+                                    </svg>
+                                    <div class="info-content">
+                                        <div class="info-label">Contatti</div>
+                                        <div class="info-value">
+                                            <a href="tel:+393398765432" style="color: inherit; text-decoration: none;">339 876 5432</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="store-services">
+                                <div class="services-title">Servizi disponibili</div>
+                                <div class="service-tags">
+                                    <span class="service-tag">Attivazioni</span>
+                                    <span class="service-tag">Assistenza</span>
+                                    <span class="service-tag">Riparazioni</span>
+                                    <span class="service-tag">Business</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="store-actions">
+                            <a href="https://www.google.com/maps/dir//Strada+Statale+dei+Giovi,+35,+20037+Paderno+Dugnano+MI" target="_blank" class="btn btn-primary">Indicazioni</a>
+                            <a href="https://wa.me/393398765432?text=Ciao!%20Vorrei%20prenotare%20un%20appuntamento%20presso%20il%20negozio%20di%20Paderno%20Dugnano." class="btn btn-ghost">Prenota</a>
+                        </div>
+                    </article>
+
+                    <!-- Giussano Store -->
+                    <article class="store-card" id="giussano">
+                        <div class="store-header">
+                            <span class="store-badge" data-hours="09:30-19:30">APERTO ORA</span>
+                            <div class="store-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M3 21h18"/>
+                                    <path d="M5 21V7l8-4v18"/>
+                                    <path d="M19 21V11l-6-4"/>
+                                </svg>
+                            </div>
+                            <h3 class="store-name">CC Carrefour</h3>
+                            <address class="store-address">
+                                Via Prealpi, 74<br>
+                                20833 Giussano (MB)
+                            </address>
+                        </div>
+                        
+                        <div class="store-body">
+                            <div class="store-info">
+                                <div class="info-row">
+                                    <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <polyline points="12,6 12,12 16,14"/>
+                                    </svg>
+                                    <div class="info-content">
+                                        <div class="info-label">Orari</div>
+                                        <div class="hours-grid">
+                                            <span class="hours-day">Lun-Sab:</span>
+                                            <span class="hours-time">09:30 - 19:30</span>
+                                            <span class="hours-day">Domenica:</span>
+                                            <span class="hours-time hours-closed">Chiuso</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="info-row">
+                                    <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.11.37 2.31.57 3.58.57a1 1 0 0 1 1 1V21a1 1 0 0 1-1 1C10.85 22 2 13.15 2 2a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.27.2 2.47.57 3.58a1 1 0 0 1-.24 1.01l-2.2 2.2z"/>
+                                    </svg>
+                                    <div class="info-content">
+                                        <div class="info-label">Contatti</div>
+                                        <div class="info-value">
+                                            <a href="tel:+393398765432" style="color: inherit; text-decoration: none;">339 876 5432</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="store-services">
+                                <div class="services-title">Servizi disponibili</div>
+                                <div class="service-tags">
+                                    <span class="service-tag">Attivazioni</span>
+                                    <span class="service-tag">Smartphone</span>
+                                    <span class="service-tag">Fibra</span>
+                                    <span class="service-tag">Permuta</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="store-actions">
+                            <a href="https://www.google.com/maps/dir//Via+Prealpi,+74,+20833+Giussano+MB" target="_blank" class="btn btn-primary">Indicazioni</a>
+                            <a href="https://wa.me/393398765432?text=Ciao!%20Vorrei%20prenotare%20un%20appuntamento%20presso%20il%20negozio%20di%20Giussano." class="btn btn-ghost">Prenota</a>
+                        </div>
+                    </article>
+
+                    <!-- Villa Santa Store -->
+                    <article class="store-card" id="villa-santa">
+                        <div class="store-header">
+                            <span class="store-badge" data-hours="09:00-20:00">APERTO ORA</span>
+                            <div class="store-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M3 21h18"/>
+                                    <path d="M5 21V7l8-4v18"/>
+                                    <path d="M19 21V11l-6-4"/>
+                                </svg>
+                            </div>
+                            <h3 class="store-name">CC Gigante</h3>
+                            <address class="store-address">
+                                Via Tiziano De Celio, 2<br>
+                                20838 Villa Santa (MB)
+                            </address>
+                        </div>
+                        
+                        <div class="store-body">
+                            <div class="store-info">
+                                <div class="info-row">
+                                    <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <polyline points="12,6 12,12 16,14"/>
+                                    </svg>
+                                    <div class="info-content">
+                                        <div class="info-label">Orari</div>
+                                        <div class="hours-grid">
+                                            <span class="hours-day">Lun-Dom:</span>
+                                            <span class="hours-time">09:00 - 20:00</span>
+                                            <span class="hours-day">Festivi:</span>
+                                            <span class="hours-time">09:00 - 20:00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="info-row">
+                                    <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.11.37 2.31.57 3.58.57a1 1 0 0 1 1 1V21a1 1 0 0 1-1 1C10.85 22 2 13.15 2 2a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.27.2 2.47.57 3.58a1 1 0 0 1-.24 1.01l-2.2 2.2z"/>
+                                    </svg>
+                                    <div class="info-content">
+                                        <div class="info-label">Contatti</div>
+                                        <div class="info-value">
+                                            <a href="tel:+393398765432" style="color: inherit; text-decoration: none;">339 876 5432</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="store-services">
+                                <div class="services-title">Servizi disponibili</div>
+                                <div class="service-tags">
+                                    <span class="service-tag">Attivazioni</span>
+                                    <span class="service-tag">Consulenza</span>
+                                    <span class="service-tag">5G</span>
+                                    <span class="service-tag">IoT</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="store-actions">
+                            <a href="https://www.google.com/maps/dir//Via+Tiziano+De+Celio,+2,+20838+Villa+Santa+MB" target="_blank" class="btn btn-primary">Indicazioni</a>
+                            <a href="https://wa.me/393398765432?text=Ciao!%20Vorrei%20prenotare%20un%20appuntamento%20presso%20il%20negozio%20di%20Villa%20Santa." class="btn btn-ghost">Prenota</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="section" style="background: #f8fafc; padding-top: 0;">
+            <div class="section-container">
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <div class="map-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <h3 style="font-size: 1.5rem; color: var(--ink); margin-bottom: 1rem;">Mappa Interattiva</h3>
+                        <p style="color: var(--muted); margin-bottom: 2rem;">
+                            Visualizza tutti i nostri negozi sulla mappa e calcola il percorso più veloce
+                        </p>
+                        <a href="https://www.google.com/maps/search/oak+tree+vodafone+milano" target="_blank" class="btn btn-primary">
+                            Apri in Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Available Section -->
+        <section class="section">
+            <div class="section-container">
+                <div class="section-header">
+                    <div class="section-tag">• SERVIZI IN NEGOZIO</div>
+                    <h2 class="section-title">Cosa Puoi Fare nei Nostri Store</h2>
+                    <p class="section-subtitle">
+                        Ogni negozio offre servizi completi per privati e aziende 
+                        con personale qualificato e multilingue.
+                    </p>
+                </div>
+
+                <div class="grid grid-3">
+                    <div class="store-card">
+                        <div class="store-body" style="padding-top: 2rem;">
+                            <div style="font-size: 3rem; text-align: center; margin-bottom: 1rem;">📱</div>
+                            <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--ink); text-align: center; margin-bottom: 1rem;">Attivazioni Immediate</h3>
+                            <p style="color: var(--muted); text-align: center; margin-bottom: 1.5rem;">
+                                SIM, eSIM e fibra attive subito. Portabilità senza interruzioni con gestione completa delle pratiche.
+                            </p>
+                            <ul style="list-style: none; padding: 0; color: var(--muted); font-size: 0.9rem;">
+                                <li style="padding: 0.5rem 0; border-top: 1px solid var(--light-gray);">✓ Attivazione in 10 minuti</li>
+                                <li style="padding: 0.5rem 0; border-top: 1px solid var(--light-gray);">✓ Portabilità assistita</li>
+                                <li style="padding: 0.5rem 0; border-top: 1px solid var(--light-gray);">✓ Configurazione dispositivi</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="store-card">
+                        <div class="store-body" style="padding-top: 2rem;">
+                            <div style="font-size: 3rem; text-align: center; margin-bottom: 1rem;">🛠️</div>
+                            <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--ink); text-align: center; margin-bottom: 1rem;">Assistenza Tecnica</h3>
+                            <p style="color: var(--muted); text-align: center; margin-bottom: 1.5rem;">
+                                Riparazioni express, configurazioni e supporto tecnico per tutti i dispositivi e servizi Vodafone.
+                            </p>
+                            <ul style="list-style: none; padding: 0; color: var(--muted); font-size: 0.9rem;">
+                                <li style="padding: 0.5rem 0; border-top: 1px solid var(--light-gray);">✓ Diagnosi gratuita</li>
+                                <li style="padding: 0.5rem 0; border-top: 1px solid var(--light-gray);">✓ Riparazioni certificate</li>
+                                <li style="padding: 0.5rem 0; border-top: 1px solid var(--light-gray);">✓ Backup e trasferimento dati</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="store-card">
+                        <div class="store-body" style="padding-top: 2rem;">
+                            <div style="font-size: 3rem; text-align: center; margin-bottom: 1rem;">💼</div>
+                            <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--ink); text-align: center; margin-bottom: 1rem;">Consulenza Business</h3>
+                            <p style="color: var(--muted); text-align: center; margin-bottom: 1.5rem;">
+                                Soluzioni personalizzate per aziende e professionisti con analisi gratuita delle esigenze.
+                            </p>
+                            <ul style="list-style: none; padding: 0; color: var(--muted); font-size: 0.9rem;">
+                                <li style="padding: 0.5rem 0; border-top: 1px solid var(--light-gray);">✓ Analisi costi/benefici</li>
+                                <li style="padding: 0.5rem 0; border-top: 1px solid var(--light-gray);">✓ Demo soluzioni</li>
+                                <li style="padding: 0.5rem 0; border-top: 1px solid var(--light-gray);">✓ Account manager dedicato</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="cta-container">
+                <h2 class="cta-title">Vieni a Trovarci</h2>
+                <p class="cta-subtitle">
+                    Prenota un appuntamento per evitare attese o vieni direttamente in negozio. 
+                    Il nostro team ti aspetta per offrirti la migliore esperienza Vodafone.
+                </p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/393398765432?text=Ciao!%20Vorrei%20prenotare%20un%20appuntamento%20in%20negozio." class="btn btn-whatsapp">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.123-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                        </svg>
+                        Prenota su WhatsApp
+                    </a>
+                    <a href="tel:+393398765432" class="btn btn-ghost">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.11.37 2.31.57 3.58.57a1 1 0 0 1 1 1V21a1 1 0 0 1-1 1C10.85 22 2 13.15 2 2a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.27.2 2.47.57 3.58a1 1 0 0 1-.24 1.01l-2.2 2.2z"/>
+                        </svg>
+                        Chiama 339 876 5432
+                    </a>
+                    <a href="contatti.html" class="btn btn-ghost">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 4H4a2 2 0 0 0-2 2v.4l10 6.25L22 6.4V6a2 2 0 0 0-2-2zm0 5.2-8 5-8-5V18a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9.2z"/>
+                        </svg>
+                        Contatto Email
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/393398765432?text=Ciao!%20Vorrei%20informazioni%20sui%20vostri%20negozi." class="whatsapp-btn" aria-label="Contattaci su WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.123-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <script>
+        // JavaScript consolidato per la pagina Negozi
+        const navbar = document.getElementById('navbar');
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        // Navbar scroll
+        window.addEventListener('scroll', function(){
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+        
+        // Mobile menu con scroll ottimizzato
+        function toggleMenu(open){
+            const isOpen = open !== undefined ? open : !mobileMenuBtn.classList.contains('active');
+            mobileMenuBtn.classList.toggle('active', isOpen);
+            mobileMenu.classList.toggle('active', isOpen);
+            mobileMenuBtn.setAttribute('aria-expanded', isOpen);
+            
+            // Gestione scroll semplificata
+            if(isOpen) {
+                // Blocca solo il body scroll, permetti menu scroll
+                document.body.style.overflow = 'hidden';
+            } else {
+                // Ripristina body scroll
+                document.body.style.overflow = '';
+            }
+        }
+        
+        if(mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', function(){
+                toggleMenu();
+            });
+        }
+        
+        if(mobileMenu) {
+            mobileMenu.querySelectorAll('a').forEach(function(a){
+                a.addEventListener('click', function(){
+                    // Chiudi il menu solo per link interni
+                    if(this.getAttribute('href').startsWith('#')){
+                        toggleMenu(false);
+                    }
+                });
+            });
+        }
+        
+        // Store open/closed status
+        (function(){
+            const now = new Date();
+            // Fuso orario Europa/Roma
+            const fmt = new Intl.DateTimeFormat('it-IT', {
+                timeZone:'Europe/Rome',
+                hour:'2-digit',
+                minute:'2-digit',
+                hour12:false,
+                weekday: 'long'
+            });
+            const timeParts = fmt.formatToParts(now);
+            const hh = parseInt(timeParts.find(function(p){ return p.type === 'hour'; }).value);
+            const mm = parseInt(timeParts.find(function(p){ return p.type === 'minute'; }).value);
+            const weekday = timeParts.find(function(p){ return p.type === 'weekday'; }).value.toLowerCase();
+            const cur = hh * 60 + mm;
+            const isSunday = weekday === 'domenica';
+
+            document.querySelectorAll('.store-badge[data-hours]').forEach(function(el){
+                const range = el.dataset.hours.split('-');
+                const openParts = range[0].split(':');
+                const closeParts = range[1].split(':');
+                const ah = parseInt(openParts[0]);
+                const am = parseInt(openParts[1]);
+                const bh = parseInt(closeParts[0]);
+                const bm = parseInt(closeParts[1]);
+                
+                // Check if store is open
+                let open = false;
+                
+                // Special case for Villa Santa (open every day)
+                if(el.closest('#villa-santa')) {
+                    open = (cur >= (ah * 60 + am) && cur <= (bh * 60 + bm));
+                } else {
+                    // Paderno and Giussano (closed on Sunday)
+                    open = !isSunday && (cur >= (ah * 60 + am) && cur <= (bh * 60 + bm));
+                }
+                
+                el.textContent = open ? 'APERTO ORA' : 'CHIUSO';
+                el.classList.toggle('closed', !open);
+            });
+        })();
+        
+        // Smooth scroll solo per link interni (che iniziano con #)
+        document.querySelectorAll('a[href^="#"]').forEach(function(anchor){
+            anchor.addEventListener('click', function(e){
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if(target) {
+                    target.scrollIntoView({behavior:'smooth', block:'start'});
+                }
+            });
+        });
+
+        // Animazione statistiche in vista
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationDelay = Math.random() * 0.3 + 's';
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        // Osserva tutti gli elementi card e stat-item
+        document.querySelectorAll('.store-card, .stat-item').forEach(function(el) {
+            observer.observe(el);
+        });
+
+        // Smooth scroll per tutti i link interni della pagina
+        document.addEventListener('DOMContentLoaded', function() {
+            // Evidenzia la pagina corrente nel menu
+            const currentPage = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            navLinks.forEach(function(link) {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
