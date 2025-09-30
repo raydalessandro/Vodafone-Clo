@@ -1,29 +1,55 @@
-# Oak Tree - Vodafone Rivenditore Autorizzato
-# Robots.txt ottimizzato per SEO
+# robots.txt per Oak Tree - Rivenditore Vodafone Monza
+# https://oak-tree.com
 
 User-agent: *
 Allow: /
 
-# Blocca cartelle admin/private se presenti
-Disallow: /admin/
-Disallow: /private/
-Disallow: /temp/
-
-# Blocca file sistema
-Disallow: /*.json$
-Disallow: /*.xml$ 
-Disallow: /README.md
-
-# Performance: blocca risorse non indicizzabili
-Disallow: /assets/fonts/
-Disallow: /assets/videos/
-
 # Sitemap
 Sitemap: https://oak-tree.com/sitemap.xml
 
-# Crawl-delay per bot pesanti (opzionale)
+# Blocca directory admin se presenti
+Disallow: /admin/
+Disallow: /private/
+Disallow: /_old/
+Disallow: /temp/
+
+# Blocca file sensibili
+Disallow: /*.log$
+Disallow: /*.sql$
+Disallow: /*.zip$
+
+# Consenti tutti i file statici
+Allow: /images/
+Allow: /css/
+Allow: /js/
+Allow: /fonts/
+
+# Crawl-delay per bot gentili
+Crawl-delay: 1
+
+# Regole specifiche per bot comuni
+User-agent: Googlebot
+Crawl-delay: 0
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /images/
+
+User-agent: Bingbot
+Crawl-delay: 1
+
+User-agent: Slurp
+Crawl-delay: 2
+
+# Blocca bot malevoli noti
 User-agent: AhrefsBot
-Crawl-delay: 5
+Crawl-delay: 10
 
 User-agent: SemrushBot
-Crawl-delay: 5
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
