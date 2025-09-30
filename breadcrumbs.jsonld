@@ -1,0 +1,54 @@
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://oak-tree.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Privati",
+      "item": "https://oak-tree.com/privati.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Business",
+      "item": "https://oak-tree.com/business.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Servizi",
+      "item": "https://oak-tree.com/servizi.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Smartphone",
+      "item": "https://oak-tree.com/smartphone.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Chi Siamo",
+      "item": "https://oak-tree.com/chi-siamo.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "Negozi",
+      "item": "https://oak-tree.com/negozi.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "Contatti",
+      "item": "https://oak-tree.com/contatti.html"
+    }
+  ]
+}
