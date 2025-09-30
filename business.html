@@ -1276,21 +1276,21 @@
 </head>
 <body>
     <!-- Skip link for accessibility -->
-    <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;">Salta ai contenuti</a>
+    <a href="#main-content" class="skip-link">Salta al contenuto principale</a>
     
     <!-- Brand ribbon -->
     <div class="brand-ribbon"></div>
 
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="logo">
-                <span style="font-size:1.8rem;filter:drop-shadow(0 2px 8px rgba(230,0,0,.3));">🌳</span>
-                <span style="background:linear-gradient(135deg, #e60000, #ff3333);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Oak Tree</span>
-            </a>
-            
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="privati.html" class="nav-link">Privati</a></li>
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Navigazione principale">
+    <div class="nav-container">
+      <a href="index.html" class="logo" aria-label="Oak Tree - Torna alla homepage">
+        <span aria-hidden="true">🌳</span>
+        <span>Oak Tree</span>
+      </a>
+      
+      <ul class="nav-menu" id="navMenu">
+                <li><a href="privati.html" class="nav-link active">Privati</a></li>
                 <li><a href="business.html" class="nav-link active">Business</a></li>
                 <li><a href="servizi.html" class="nav-link">Servizi</a></li>
                 <li><a href="smartphone.html" class="nav-link">Smartphone</a></li>
@@ -1300,12 +1300,15 @@
                 <li><a href="contatti.html" class="nav-link">Contatti</a></li>
             </ul>
             
-            <div class="mobile-menu-btn" id="mobileMenuBtn" aria-controls="mobileMenu" aria-expanded="false">
-                <div class="hamburger-line"></div>
-                <div class="hamburger-line"></div>
-                <div class="hamburger-line"></div>
-            </div>
-        </div>
+       <button class="mobile-menu-btn" id="mobileMenuBtn" 
+              aria-controls="mobileMenu" 
+              aria-expanded="false"
+              aria-label="Apri menu navigazione">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+      </button>
+    </div>
         
         <div class="mobile-menu" id="mobileMenu">
             <div class="mobile-nav-links">
