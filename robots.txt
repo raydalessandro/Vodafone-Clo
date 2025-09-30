@@ -1,0 +1,29 @@
+# Oak Tree - Vodafone Rivenditore Autorizzato
+# Robots.txt ottimizzato per SEO
+
+User-agent: *
+Allow: /
+
+# Blocca cartelle admin/private se presenti
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+
+# Blocca file sistema
+Disallow: /*.json$
+Disallow: /*.xml$ 
+Disallow: /README.md
+
+# Performance: blocca risorse non indicizzabili
+Disallow: /assets/fonts/
+Disallow: /assets/videos/
+
+# Sitemap
+Sitemap: https://oak-tree.com/sitemap.xml
+
+# Crawl-delay per bot pesanti (opzionale)
+User-agent: AhrefsBot
+Crawl-delay: 5
+
+User-agent: SemrushBot
+Crawl-delay: 5
