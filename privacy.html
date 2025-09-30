@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Informativa sulla Privacy di Oak Tree. Scopri come raccogliamo, utilizziamo e proteggiamo i tuoi dati personali in conformità al GDPR.">
+    <meta name="robots" content="noindex, follow">
+    <title>Privacy Policy - Oak Tree | Rivenditore Vodafone</title>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://oak-tree.com/privacy.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌳</text></svg>">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --vodafone-red: #e60000;
+            --ink: #1a1a1a;
+            --muted: #64748b;
+            --light-gray: #e2e8f0;
+            --bg-secondary: #f8fafc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--ink);
+            background: #fff;
+        }
+
+        /* Skip link */
+        .skip-link {
+            position: absolute;
+            left: -9999px;
+            z-index: 999;
+        }
+        .skip-link:focus {
+            left: 50%;
+            transform: translateX(-50%);
+            top: 10px;
+            background: var(--vodafone-red);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+
+        /* Brand Ribbon */
+        .brand-ribbon {
+            background: linear-gradient(135deg, var(--vodafone-red) 0%, #ff3333 100%);
+            height: 4px;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            transition: all 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: 800;
+            text-decoration: none;
+            color: var(--ink);
+        }
+
+        .logo span:first-child {
+            font-size: 1.8rem;
+            filter: drop-shadow(0 2px 8px rgba(230, 0, 0, 0.3));
+        }
+
+        .logo span:last-child {
+            background: linear-gradient(135deg, var(--vodafone-red), #ff3333);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 0.5rem;
+        }
+
+        .nav-link {
+            padding: 0.5rem 1rem;
+            color: var(--ink);
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.2s;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .nav-link:hover {
+            background: var(--bg-secondary);
+            color: var(--vodafone-red);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .hamburger-line {
+            width: 25px;
+            height: 3px;
+            background: var(--ink);
+            border-radius: 3px;
+            transition: all 0.3s;
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            background: var(--bg-secondary);
+            padding: 1rem 0;
+        }
+
+        .breadcrumb-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .breadcrumb-nav {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb-nav a {
+            color: var(--muted);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .breadcrumb-nav a:hover {
+            color: var(--vodafone-red);
+        }
+
+        .breadcrumb-separator {
+            color: var(--muted);
+        }
+
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            padding: 4rem 2rem;
+            color: white;
+            text-align: center;
+        }
+
+        .page-header-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .badge-legal {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .page-title {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .page-subtitle {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Main Content */
+        .legal-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .legal-section {
+            margin-bottom: 3rem;
+        }
+
+        .legal-section h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--ink);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid var(--vodafone-red);
+        }
+
+        .legal-section h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--ink);
+            margin: 2rem 0 1rem;
+        }
+
+        .legal-section p {
+            color: var(--muted);
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .legal-section ul, .legal-section ol {
+            margin: 1rem 0 1rem 2rem;
+            color: var(--muted);
+        }
+
+        .legal-section li {
+            margin-bottom: 0.5rem;
+            line-height: 1.8;
+        }
+
+        .info-box {
+            background: var(--bg-secondary);
+            border-left: 4px solid var(--vodafone-red);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .info-box h4 {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--ink);
+        }
+
+        .info-box p {
+            margin: 0;
+        }
+
+        .contact-info {
+            background: linear-gradient(135deg, var(--vodafone-red) 0%, #ff3333 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 3rem 0;
+        }
+
+        .contact-info h3 {
+            color: white;
+            margin-top: 0;
+        }
+
+        .contact-info p {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .contact-info a {
+            color: white;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+
+        .last-update {
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.9rem;
+            padding: 2rem;
+            border-top: 1px solid var(--light-gray);
+            margin-top: 4rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 3rem 2rem 1.5rem;
+        }
+
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-section a:hover {
+            color: var(--vodafone-red);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: flex;
+            }
+
+            .mobile-menu.active {
+                display: block;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            }
+
+            .mobile-nav-links {
+                display: flex;
+                flex-direction: column;
+                padding: 1rem;
+            }
+
+            .mobile-nav-links .nav-link {
+                padding: 1rem;
+                border-bottom: 1px solid var(--light-gray);
+            }
+
+            .page-title {
+                font-size: 2rem;
+            }
+
+            .page-subtitle {
+                font-size: 1rem;
+            }
+
+            .legal-content {
+                padding: 2rem 1rem;
+            }
+
+            .legal-section h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip link -->
+    <a href="#main-content" class="skip-link">Salta al contenuto principale</a>
+    
+    <!-- Brand ribbon -->
+    <div class="brand-ribbon"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span>🌳</span>
+                <span>Oak Tree</span>
+            </a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="privati.html" class="nav-link">Privati</a></li>
+                <li><a href="business.html" class="nav-link">Business</a></li>
+                <li><a href="servizi.html" class="nav-link">Servizi</a></li>
+                <li><a href="smartphone.html" class="nav-link">Smartphone</a></li>
+                <li><a href="chi-siamo.html" class="nav-link">Chi Siamo</a></li>
+                <li><a href="lavora-con-noi.html" class="nav-link">Lavora con Noi</a></li>
+                <li><a href="negozi.html" class="nav-link">I Nostri Negozi</a></li>
+                <li><a href="contatti.html" class="nav-link">Contatti</a></li>
+            </ul>
+            
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </div>
+        </div>
+        
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-nav-links">
+                <a href="privati.html" class="nav-link">Privati & Famiglia</a>
+                <a href="business.html" class="nav-link">Business & P.IVA</a>
+                <a href="servizi.html" class="nav-link">Servizi & Assistenza</a>
+                <a href="smartphone.html" class="nav-link">Smartphone</a>
+                <a href="chi-siamo.html" class="nav-link">Chi Siamo</a>
+                <a href="lavora-con-noi.html" class="nav-link">Lavora con Noi</a>
+                <a href="negozi.html" class="nav-link">I Nostri Negozi</a>
+                <a href="contatti.html" class="nav-link">Contatti</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="breadcrumb-container">
+            <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="breadcrumb-separator">›</span>
+                <span>Privacy Policy</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="page-header-container">
+            <div class="badge-legal">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                    <line x1="9" y1="9" x2="15" y2="9"/>
+                    <line x1="9" y1="15" x2="15" y2="15"/>
+                </svg>
+                <span>Protezione dei Dati</span>
+            </div>
+            
+            <h1 class="page-title">Informativa sulla <span style="color:#e60000">Privacy</span></h1>
+            <p class="page-subtitle">
+                La tua privacy è importante per noi. Scopri come raccogliamo, utilizziamo e proteggiamo 
+                i tuoi dati personali in conformità al Regolamento UE 2016/679 (GDPR).
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" class="legal-content">
+        
+        <div class="legal-section">
+            <h2>1. Titolare del Trattamento</h2>
+            <p>
+                Il Titolare del trattamento dei dati personali è <strong>Oak Tree S.r.l.</strong>, 
+                con sede legale in Strada Statale dei Giovi 35, 20037 Paderno Dugnano (MI).
+            </p>
+            <div class="info-box">
+                <h4>📧 Contatti Privacy</h4>
+                <p>
+                    <strong>Email:</strong> privacy@oak-tree.it<br>
+                    <strong>PEC:</strong> oaktree@pec.it<br>
+                    <strong>Tel:</strong> +39 339 876 5432
+                </p>
+            </div>
+        </div>
+
+        <div class="legal-section">
+            <h2>2. Tipologia di Dati Raccolti</h2>
+            <p>I dati personali che possiamo raccogliere includono:</p>
+            
+            <h3>2.1 Dati Forniti Volontariamente</h3>
+            <ul>
+                <li><strong>Dati identificativi:</strong> nome, cognome, data di nascita, codice fiscale</li>
+                <li><strong>Dati di contatto:</strong> indirizzo email, numero di telefono, indirizzo postale</li>
+                <li><strong>Dati professionali:</strong> per clienti business (P.IVA, ragione sociale, ruolo aziendale)</li>
+                <li><strong>Dati di pagamento:</strong> coordinate bancarie, carta di credito (gestite da provider certificati PCI-DSS)</li>
+                <li><strong>Documenti:</strong> copia documento identità (per attivazioni SIM e contratti)</li>
+            </ul>
+
+            <h3>2.2 Dati Raccolti Automaticamente</h3>
+            <ul>
+                <li><strong>Dati di navigazione:</strong> indirizzo IP, tipo browser, sistema operativo</li>
+                <li><strong>Cookie tecnici:</strong> per il funzionamento del sito (vedi <a href="cookie.html">Cookie Policy</a>)</li>
+                <li><strong>Statistiche anonime:</strong> pagine visitate, tempo di permanenza, provenienza</li>
+            </ul>
+        </div>
+
+        <div class="legal-section">
+            <h2>3. Finalità del Trattamento</h2>
+            <p>I tuoi dati personali sono trattati per le seguenti finalità:</p>
+
+            <h3>3.1 Finalità Contrattuali (base giuridica: esecuzione contratto)</h3>
+            <ul>
+                <li>Attivazione e gestione contratti telefonici (SIM, fibra, servizi)</li>
+                <li>Fornitura servizi richiesti (assistenza tecnica, portabilità numero, riparazioni)</li>
+                <li>Emissione fatture e gestione pagamenti</li>
+                <li>Comunicazioni di servizio (conferme ordine, scadenze, variazioni contrattuali)</li>
+            </ul>
+
+            <h3>3.2 Finalità Legali (base giuridica: obbligo di legge)</h3>
+            <ul>
+                <li>Adempimenti fiscali e contabili</li>
+                <li>Registrazione contratti operatori (come richiesto da AGCOM)</li>
+                <li>Conservazione documentazione per termini di legge</li>
+            </ul>
+
+            <h3>3.3 Finalità di Marketing (base giuridica: consenso o legittimo interesse)</h3>
+            <ul>
+                <li>Invio newsletter con offerte e promozioni (solo con tuo consenso)</li>
+                <li>Comunicazioni su nuovi prodotti e servizi</li>
+                <li>Sondaggi di soddisfazione clienti</li>
+            </ul>
+            <p><em>Puoi revocare il consenso in qualsiasi momento cliccando "Disiscriviti" nelle email o contattandoci.</em></p>
+        </div>
+
+        <div class="legal-section">
+            <h2>4. Modalità di Trattamento</h2>
+            <p>I dati personali sono trattati con strumenti informatici e cartacei, con logiche strettamente correlate alle finalità e mediante l'adozione di misure di sicurezza adeguate:</p>
+            <ul>
+                <li><strong>Crittografia SSL/TLS:</strong> per la trasmissione sicura dei dati sul sito</li>
+                <li><strong>Accesso limitato:</strong> solo personale autorizzato può accedere ai dati</li>
+                <li><strong>Backup regolari:</strong> con cifratura dei dati sensibili</li>
+                <li><strong>Firewall e antivirus:</strong> protezione dei sistemi informatici</li>
+                <li><strong>Formazione staff:</strong> tutti i dipendenti ricevono training sulla privacy</li>
+            </ul>
+        </div>
+
+        <div class="legal-section">
+            <h2>5. Tempi di Conservazione</h2>
+            <p>I dati sono conservati per il tempo strettamente necessario:</p>
+            <ul>
+                <li><strong>Dati contrattuali:</strong> per tutta la durata del contratto + 10 anni (obblighi fiscali)</li>
+                <li><strong>Dati marketing:</strong> fino a revoca del consenso o 24 mesi di inattività</li>
+                <li><strong>Dati navigazione:</strong> massimo 12 mesi (solo dati aggregati anonimi oltre)</li>
+                <li><strong>Curriculum (candidature):</strong> 24 mesi dalla ricezione</li>
+            </ul>
+        </div>
+
+        <div class="legal-section">
+            <h2>6. Comunicazione e Diffusione</h2>
+            
+            <h3>6.1 Destinatari dei Dati</h3>
+            <p>I dati possono essere comunicati a:</p>
+            <ul>
+                <li><strong>Vodafone Italia S.p.A.:</strong> come operatore di rete per attivazione servizi</li>
+                <li><strong>Provider pagamenti:</strong> per elaborazione transazioni (es. Nexi, PayPal)</li>
+                <li><strong>Corrieri:</strong> per consegna SIM e dispositivi (solo nome, indirizzo, telefono)</li>
+                <li><strong>Commercialista/Consulenti fiscali:</strong> per adempimenti contabili</li>
+                <li><strong>Autorità competenti:</strong> su richiesta per obblighi di legge (Polizia Postale, AGCOM)</li>
+                <li><strong>Software CRM/Gestionali:</strong> con misure di sicurezza certificate (es. Salesforce, Aruba)</li>
+            </ul>
+            <p><strong>I dati non sono mai diffusi pubblicamente né venduti a terzi.</strong></p>
+
+            <h3>6.2 Trasferimento Extra-UE</h3>
+            <p>
+                Alcuni fornitori (es. servizi cloud) potrebbero avere server fuori dall'UE. 
+                In tal caso, ci assicuriamo che:
+            </p>
+            <ul>
+                <li>Il paese sia riconosciuto dalla UE come "adeguato" per la protezione dati</li>
+                <li>Oppure siano adottate le Clausole Contrattuali Standard approvate dalla UE</li>
+                <li>I dati sensibili (es. carte di credito) rimangono sempre in UE</li>
+            </ul>
+        </div>
+
+        <div class="legal-section">
+            <h2>7. I Tuoi Diritti (GDPR)</h2>
+            <p>In qualità di interessato, hai diritto a:</p>
+            <ol>
+                <li><strong>Accesso:</strong> ottenere conferma dell'esistenza dei tuoi dati e riceverne copia</li>
+                <li><strong>Rettifica:</strong> correggere dati inesatti o incompleti</li>
+                <li><strong>Cancellazione:</strong> richiedere la rimozione dei dati (diritto all'oblio)</li>
+                <li><strong>Limitazione:</strong> limitare il trattamento in casi specifici</li>
+                <li><strong>Portabilità:</strong> ricevere i dati in formato strutturato per trasferirli ad altro titolare</li>
+                <li><strong>Opposizione:</strong> opporti al trattamento per motivi legittimi</li>
+                <li><strong>Revoca consenso:</strong> ritirare il consenso al marketing in qualsiasi momento</li>
+                <li><strong>Reclamo:</strong> presentare reclamo al Garante Privacy (www.garanteprivacy.it)</li>
+            </ol>
+
+            <div class="contact-info">
+                <h3>Come Esercitare i Tuoi Diritti</h3>
+                <p>
+                    Invia una richiesta scritta via email a <a href="mailto:privacy@oak-tree.it">privacy@oak-tree.it</a> 
+                    allegando copia del documento d'identità. Risponderemo entro 30 giorni.<br><br>
+                    Oppure via posta a: Oak Tree S.r.l., Ufficio Privacy, Strada Statale dei Giovi 35, 20037 Paderno Dugnano (MI)
+                </p>
+            </div>
+        </div>
+
+        <div class="legal-section">
+            <h2>8. Sicurezza dei Dati</h2>
+            <p>Adottiamo misure tecniche e organizzative per prevenire:</p>
+            <ul>
+                <li>Accessi non autorizzati</li>
+                <li>Divulgazione accidentale</li>
+                <li>Alterazione o distruzione dei dati</li>
+                <li>Perdita di dati (backup giornalieri)</li>
+            </ul>
+            <p>
+                In caso di <strong>data breach</strong> (violazione dati) con rischio per i tuoi diritti, 
+                ti informeremo entro 72 ore come previsto dal GDPR.
+            </p>
+        </div>
+
+        <div class="legal-section">
+            <h2>9. Minori</h2>
+            <p>
+                I nostri servizi non sono destinati a minori di 14 anni. 
+                Se sei un genitore e ritieni che tuo figlio ci abbia fornito dati senza consenso, 
+                contattaci immediatamente per la cancellazione.
+            </p>
+        </div>
+
+        <div class="legal-section">
+            <h2>10. Modifiche all'Informativa</h2>
+            <p>
+                Questa informativa può essere aggiornata periodicamente. 
+                Le modifiche sostanziali saranno comunicate tramite banner sul sito o email. 
+                Ti invitiamo a consultare regolarmente questa pagina.
+            </p>
+        </div>
+
+        <div class="legal-section">
+            <h2>11. Link Esterni</h2>
+            <p>
+                Il nostro sito può contenere link a siti di terze parti (es. Vodafone.it). 
+                Non siamo responsabili per le pratiche di privacy di tali siti. 
+                Ti consigliamo di leggere le loro informative prima di fornire dati personali.
+            </p>
+        </div>
+
+        <div class="info-box">
+            <h4>📞 Hai domande sulla Privacy?</h4>
+            <p>
+                Contatta il nostro team: <strong>privacy@oak-tree.it</strong> o chiamaci al <strong>+39 339 876 5432</strong>.<br>
+                Per emergenze di sicurezza: <strong>security@oak-tree.it</strong>
+            </p>
+        </div>
+
+        <div class="last-update">
+            <strong>Ultimo aggiornamento:</strong> 15 Gennaio 2025<br>
+            <strong>Versione:</strong> 2.0
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Oak Tree</h4>
+                    <p style="color: rgba(255,255,255,0.6); margin-top: 1rem;">
+                        Rivenditore Autorizzato Vodafone<br>
+                        Dal 2010 a Milano Nord e Brianza
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Link Rapidi</h4>
+                    <ul>
+                        <li><a href="privati.html">Offerte Privati</a></li>
+                        <li><a href="business.html">Soluzioni Business</a></li>
+                        <li><a href="smartphone.html">Smartphone</a></li>
+                        <li><a href="negozi.html">I Nostri Negozi</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Informazioni</h4>
+                    <ul>
+                        <li><a href="chi-siamo.html">Chi Siamo</a></li>
+                        <li><a href="lavora-con-noi.html">Lavora con Noi</a></li>
+                        <li><a href="servizi.html">Servizi</a></li>
+                        <li><a href="contatti.html">Contatti</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Note Legali</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="cookie.html">Cookie Policy</a></li>
+                        <li><a href="termini.html">Termini e Condizioni</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>
+                    © 2025 Oak Tree S.r.l. - P.IVA 12345678901 - REA MI-1234567<br>
+                    Capitale Sociale €50.000 i.v. - Tutti i diritti riservati
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
