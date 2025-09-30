@@ -1,0 +1,118 @@
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Oak – Rivenditore Autorizzato Vodafone Monza",
+  "image": "https://oak-tree.com/images/negozio-monza.jpg",
+  "description": "Rivenditore autorizzato Vodafone a Monza e Brianza. Offerte 5G, Fibra FTTH, smartphone, soluzioni business e assistenza dedicata.",
+  "priceRange": "€€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Italia 12",
+    "addressLocality": "Monza",
+    "addressRegion": "MB",
+    "postalCode": "20900",
+    "addressCountry": "IT"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.5845,
+    "longitude": 9.2744
+  },
+  "url": "https://oak-tree.com",
+  "telephone": "+39-039-123-4567",
+  "email": "info@oak-tree.it",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "09:30",
+      "closes": "19:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday",
+      "opens": "00:00",
+      "closes": "00:00"
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "127",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "paymentAccepted": "Cash, Credit Card, Debit Card, Bank Transfer",
+  "currenciesAccepted": "EUR",
+  "areaServed": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": 45.5845,
+      "longitude": 9.2744
+    },
+    "geoRadius": "25000"
+  },
+  "sameAs": [
+    "https://www.facebook.com/oaktreemonza",
+    "https://www.instagram.com/oaktreemonza",
+    "https://www.linkedin.com/company/oak-tree-monza"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Oak Team"
+  },
+  "foundingDate": "2010",
+  "numberOfEmployees": {
+    "@type": "QuantitativeValue",
+    "value": "12"
+  },
+  "slogan": "Il tuo partner Vodafone a Monza e Brianza",
+  "knowsAbout": [
+    "Telefonia mobile",
+    "Connettività fibra ottica",
+    "Soluzioni business",
+    "Smartphone",
+    "IoT",
+    "Centralini cloud",
+    "Assistenza tecnica telecomunicazioni"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Servizi Vodafone",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Offerte Mobile 5G",
+          "description": "Piani tariffari mobile con 5G illimitato, minuti e SMS"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Fibra FTTH",
+          "description": "Connessione fibra ottica fino a 2.5 Gbps per casa e ufficio"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Soluzioni Business",
+          "description": "Connettività aziendale dedicata con IP statico e SLA garantito"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Smartphone",
+          "description": "iPhone, Samsung, Google Pixel con finanziamento TAN 0%"
+        }
+      }
+    ]
+  }
+}
