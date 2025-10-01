@@ -1184,44 +1184,6 @@
         </div>
     </nav>
 
-<!-- Footer minimale: head + bottom -->
-<style>
-  .site-footer{background:linear-gradient(135deg,#1a1a1a,#4a1c1c);color:#fff;padding:40px 24px 20px}
-  .footer-inner{max-width:1200px;margin:0 auto}
-  .footer-head{display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding-bottom:20px;border-bottom:1px solid rgba(255,255,255,.1)}
-  .brand-lockup{display:flex;gap:10px;align-items:center}
-  .brand-dot{width:10px;height:10px;border-radius:50%;background:#e60000;box-shadow:0 0 0 3px rgba(230,0,0,.2)}
-  .brand-title{font-weight:700}
-  .brand-sub{color:rgba(255,255,255,.7);font-size:.9rem}
-  .footer-cta{display:flex;gap:10px;flex-wrap:wrap}
-  .footer-bottom{padding-top:16px;display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;color:rgba(255,255,255,.7);font-size:.9rem}
-  .legal a{color:rgba(255,255,255,.7);text-decoration:none}
-  </style>
-  <footer class="site-footer" role="contentinfo">
-    <div class="footer-inner">
-      <div class="footer-head">
-        <div class="brand-lockup">
-          <span class="brand-dot" aria-hidden="true"></span>
-          <div>
-            <div class="brand-title">Oak</div>
-            <div class="brand-sub">Rivenditore autorizzato – Privati & Business</div>
-          </div>
-        </div>
-        <div class="footer-cta">
-          <a class="btn btn-primary" href="https://wa.me/393398765432" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-          <a class="btn btn-ghost" href="negozi.html">Trova Negozio</a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <div>© 2025 Oak</div>
-        <nav class="legal" aria-label="Link legali">
-          <a href="privacy.html">Privacy</a> ·
-          <a href="cookie.html">Cookie</a> ·
-          <a href="termini.html">Termini</a>
-        </nav>
-      </div>
-    </div>
-  </footer>
 
     <!-- Breadcrumb -->
     <div class="breadcrumb">
@@ -1854,6 +1816,44 @@
             });
         });
     </script>
+
+    <!-- Footer minimale: head + bottom -->
+    <style>
+      .site-footer{background:linear-gradient(135deg,#1a1a1a,#4a1c1c);color:#fff;padding:40px 24px 20px}
+      .footer-inner{max-width:1200px;margin:0 auto}
+      .footer-head{display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding-bottom:20px;border-bottom:1px solid rgba(255,255,255,.1)}
+      .brand-lockup{display:flex;gap:10px;align-items:center}
+      .brand-dot{width:10px;height:10px;border-radius:50%;background:#e60000;box-shadow:0 0 0 3px rgba(230,0,0,.2)}
+      .brand-title{font-weight:700}
+      .brand-sub{color:rgba(255,255,255,.7);font-size:.9rem}
+      .footer-cta{display:flex;gap:10px;flex-wrap:wrap}
+      .footer-bottom{padding-top:16px;display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;color:rgba(255,255,255,.7);font-size:.9rem}
+      .legal a{color:rgba(255,255,255,.7);text-decoration:none}
+      @media (max-width:768px){.footer-bottom{gap:8px}}
+    </style>
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-inner">
+        <div class="footer-head">
+          <div class="brand-lockup">
+            <span class="brand-dot" aria-hidden="true"></span>
+            <div>
+              <div class="brand-title">Oak</div>
+              <div class="brand-sub">Rivenditore autorizzato – Privati & Business</div>
+            </div>
+          </div>
+          <div class="footer-cta">
+            <a class="btn btn-primary" href="https://wa.me/393398765432" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            <a class="btn btn-ghost" href="tel:+393398765432">Chiama</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="legal">
+            <a href="privacy.html">Privacy</a> • <a href="cookie.html">Cookie</a> • <a href="termini.html">Termini</a>
+          </div>
+          <div>&copy; 2025 Oak S.r.l. - P.IVA 12345678901</div>
+        </div>
+      </div>
+    </footer>
 </body>
 </html>
               
