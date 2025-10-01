@@ -1968,6 +1968,20 @@
         line-height:1.2;
       }
     }
+
+    /* CSS per Hover Effects Recensioni */
+    .review-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(230,0,0,0.12) !important;
+      border-color: rgba(230,0,0,0.2) !important;
+    }
+    
+    /* Mobile responsive */
+    @media (max-width: 768px) {
+      .reviews-section {
+        padding: 3rem 16px !important;
+      }
+    }
   </style>
 
   <!-- ✅ SEO: JSON-LD Organization -->
@@ -2267,6 +2281,182 @@
                 <p>Portabilità bloccata? Fatture sbagliate? Ci pensiamo noi.</p>
               </div>
             </div>
+          </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- SEZIONE RECENSIONI - Inserire dopo Hero -->
+        <!-- ============================================ -->
+
+        <section class="reviews-section" style="background: linear-gradient(135deg, #fff 0%, #f8fafc 100%); padding: 5rem 24px; position: relative; overflow: hidden;">
+          <!-- Decorazione sottile -->
+          <div style="position: absolute; inset: 0; background: radial-gradient(50% 40% at 80% 20%, rgba(230,0,0,.04), transparent 70%); pointer-events: none;"></div>
+          
+          <div style="max-width: 1200px; margin: 0 auto; position: relative; z-index: 2;">
+            
+            <!-- Header con Badge Google -->
+            <div style="text-align: center; margin-bottom: 3.5rem;">
+              <!-- Badge Stelle -->
+              <div style="display: inline-flex; align-items: center; gap: 1rem; background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border: 2px solid #fbbf24; padding: 0.85rem 1.75rem; border-radius: 50px; margin-bottom: 1.75rem; box-shadow: 0 4px 16px rgba(251, 191, 36, 0.25);">
+                <div style="display: flex; gap: 0.25rem;">
+                  <span style="color: #f59e0b; font-size: 1.5rem;">★</span>
+                  <span style="color: #f59e0b; font-size: 1.5rem;">★</span>
+                  <span style="color: #f59e0b; font-size: 1.5rem;">★</span>
+                  <span style="color: #f59e0b; font-size: 1.5rem;">★</span>
+                  <span style="color: #f59e0b; font-size: 1.5rem;">★</span>
+                </div>
+                <div style="font-weight: 700; color: #92400e;">
+                  <span style="font-size: 1.5rem; font-weight: 800;">4.3</span><span style="font-size: 1.1rem;">/5</span>
+                </div>
+              </div>
+
+              <h2 style="font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; color: #1e293b; margin-bottom: 1rem; line-height: 1.2;">
+                Oltre <span style="color: #e60000;">1.000 Recensioni</span> dai Nostri Clienti
+              </h2>
+              
+              <p style="font-size: 1.2rem; color: #64748b; max-width: 650px; margin: 0 auto 1rem;">
+                Professionalità, trasparenza e assistenza che fanno la differenza. Scopri cosa dicono i nostri clienti su Google.
+              </p>
+
+              <div style="display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.95rem; color: #475569;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="color: #4285F4;">
+                  <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                  <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                  <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                  <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                </svg>
+                <span>Verificate da Google My Business</span>
+              </div>
+            </div>
+
+            <!-- Grid Recensioni -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; margin-bottom: 2.5rem;">
+              
+              <!-- Recensione 1 - Brianza CC -->
+              <div class="review-card" style="background: white; border: 1px solid #e2e8f0; border-radius: 16px; padding: 1.75rem; box-shadow: 0 4px 12px rgba(0,0,0,0.06); transition: all 0.3s ease;">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                  <div style="width: 48px; height: 48px; border-radius: 50%; background: linear-gradient(135deg, #e60000, #ff6b6b); color: white; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.2rem; flex-shrink: 0;">F</div>
+                  <div style="flex: 1;">
+                    <div style="font-weight: 700; color: #1e293b; font-size: 1.05rem; margin-bottom: 0.25rem;">Franci</div>
+                    <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: #64748b;">
+                      <div style="display: flex; gap: 0.15rem;">
+                        <span style="color: #fbbf24; font-size: 1rem;">★</span>
+                        <span style="color: #fbbf24; font-size: 1rem;">★</span>
+                        <span style="color: #fbbf24; font-size: 1rem;">★</span>
+                        <span style="color: #fbbf24; font-size: 1rem;">★</span>
+                        <span style="color: #fbbf24; font-size: 1rem;">★</span>
+                      </div>
+                      <span>•</span>
+                      <span style="color: #94a3b8;">1 mese fa</span>
+                    </div>
+                  </div>
+                </div>
+                <p style="color: #475569; line-height: 1.7; font-size: 0.95rem; margin-bottom: 0.75rem;">
+                  Grazie alla signorina Valeria dell'aiuto. Mio marito ha stipulato un contratto business super vantaggioso e spiegato nei minimi dettagli.
+                </p>
+                <span style="display: inline-block; background: #fef3c7; color: #92400e; padding: 0.35rem 0.75rem; border-radius: 6px; font-weight: 600; font-size: 0.85rem;">🏢 Cliente Business</span>
+              </div>
+
+              <!-- Recensione 2 - Giussano -->
+              <div class="review-card" style="background: white; border: 1px solid #e2e8f0; border-radius: 16px; padding: 1.75rem; box-shadow: 0 4px 12px rgba(0,0,0,0.06); transition: all 0.3s ease;">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                  <div style="width: 48px; height: 48px; border-radius: 50%; background: linear-gradient(135deg, #7c3aed, #a78bfa); color: white; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.2rem; flex-shrink: 0;">SP</div>
+                  <div style="flex: 1;">
+                    <div style="font-weight: 700; color: #1e293b; font-size: 1.05rem; margin-bottom: 0.25rem;">Saverio Potenza</div>
+                    <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: #64748b;">
+                      <div style="display: flex; gap: 0.15rem;">
+                        <span style="color: #fbbf24; font-size: 1rem;">★</span>
+                        <span style="color: #fbbf24; font-size: 1rem;">★</span>
+                        <span style="color: #fbbf24; font-size: 1rem;">★</span>
+                        <span style="color: #fbbf24; font-size: 1rem;">★</span>
+                        <span style="color: #fbbf24; font-size: 1rem;">★</span>
+                      </div>
+                      <span>•</span>
+                      <span style="color: #94a3b8;">2 mesi fa</span>
+                    </div>
+                  </div>
+                </div>
+                <p style="color: #475569; line-height: 1.7; font-size: 0.95rem; margin-bottom: 0.75rem;">
+                  Oggi mi sono recato in negozio e sono rimasto davvero colpito dalla professionalità e dalla gentilezza dei ragazzi di questo negozio.
+                </p>
+                <span style="display: inline-block; background: #dcfce7; color: #166534; padding: 0.35rem 0.75rem; border-radius: 6px; font-weight: 600; font-size: 0.85rem;">⭐ 5 Stelle</span>
+              </div>
+
+              <!-- Recensione 3 - Villasanta -->
+              <div class="review-card" style="background: white; border: 1px solid #e2e8f0; border-radius: 16px; padding: 1.75rem; box-shadow: 0 4px 12px rgba(0,0,0,0.06); transition: all 0.3s ease;">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                  <div style="width: 48px; height: 48px; border-radius: 50%; background: linear-gradient(135deg, #0ea5e9, #38bdf8); color: white; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.2rem; flex-shrink: 0;">MC</div>
+                  <div style="flex: 1;">
+                    <div style="font-weight: 700; color: #1e293b; font-size: 1.05rem; margin-bottom: 0.25rem;">Mattia Costantini</div>
+                    <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: #64748b;">
+                      <div style="display: flex; gap: 0.15rem;">
+                        <span style="color: #fbbf24; font-size: 1rem;">★</span>
+                        <span style="color: #fbbf24; font-size: 1rem;">★</span>
+                        <span style="color: #fbbf24; font-size: 1rem;">★</span>
+                        <span style="color: #fbbf24; font-size: 1rem;">★</span>
+                        <span style="color: #fbbf24; font-size: 1rem;">★</span>
+                      </div>
+                      <span>•</span>
+                      <span style="color: #94a3b8;">1 mese fa</span>
+                    </div>
+                  </div>
+                </div>
+                <p style="color: #475569; line-height: 1.7; font-size: 0.95rem; margin-bottom: 0.75rem;">
+                  Mi sono recato da Vodafone al Gigante di Villasanta al fine di trasferire l'intestazione del mio numero di telefono. Operatori gentili e disponibili!
+                </p>
+                <span style="display: inline-block; background: #e0f2fe; color: #075985; padding: 0.35rem 0.75rem; border-radius: 6px; font-weight: 600; font-size: 0.85rem;">📱 Assistenza Top</span>
+              </div>
+
+            </div>
+
+            <!-- CTA + Link ai 3 negozi -->
+            <div style="text-align: center;">
+              <p style="font-size: 1.05rem; color: #64748b; margin-bottom: 1.5rem; font-weight: 500;">
+                📍 Leggi tutte le recensioni dei nostri 3 negozi:
+              </p>
+              
+              <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-bottom: 2rem;">
+                <!-- CC Brianza -->
+                <a href="https://maps.app.goo.gl/3mf9fyNj8MCq5ABy9" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 0.5rem; background: white; border: 2px solid #e2e8f0; color: #1e293b; padding: 0.85rem 1.5rem; border-radius: 50px; font-weight: 600; font-size: 0.95rem; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(0,0,0,0.06);">
+                  <span style="font-size: 1.2rem;">⭐</span>
+                  <span>CC Brianza (4.5★)</span>
+                </a>
+                
+                <!-- Giussano -->
+                <a href="https://maps.app.goo.gl/yEGBwweNS696W84G6" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 0.5rem; background: white; border: 2px solid #e2e8f0; color: #1e293b; padding: 0.85rem 1.5rem; border-radius: 50px; font-weight: 600; font-size: 0.95rem; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(0,0,0,0.06);">
+                  <span style="font-size: 1.2rem;">⭐</span>
+                  <span>Giussano (4.0★)</span>
+                </a>
+                
+                <!-- Villasanta -->
+                <a href="https://maps.app.goo.gl/rxye9Y97HPQ6wBVo9" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 0.5rem; background: white; border: 2px solid #e2e8f0; color: #1e293b; padding: 0.85rem 1.5rem; border-radius: 50px; font-weight: 600; font-size: 0.95rem; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(0,0,0,0.06);">
+                  <span style="font-size: 1.2rem;">⭐</span>
+                  <span>Villasanta (4.2★)</span>
+                </a>
+              </div>
+
+              <!-- Statistiche Aggregate -->
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1.25rem; max-width: 800px; margin: 0 auto; padding-top: 2.5rem; border-top: 1px solid #e2e8f0;">
+                <div style="text-align: center; padding: 1.25rem; background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-radius: 16px; border: 2px solid #fbbf24;">
+                  <div style="font-size: 2.2rem; font-weight: 800; color: #92400e; margin-bottom: 0.5rem; line-height: 1;">4.3★</div>
+                  <div style="font-size: 0.85rem; color: #92400e; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;">Rating Medio</div>
+                </div>
+                <div style="text-align: center; padding: 1.25rem; background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-radius: 16px; border: 2px solid #fbbf24;">
+                  <div style="font-size: 2.2rem; font-weight: 800; color: #92400e; margin-bottom: 0.5rem; line-height: 1;">1.000+</div>
+                  <div style="font-size: 0.85rem; color: #92400e; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;">Recensioni</div>
+                </div>
+                <div style="text-align: center; padding: 1.25rem; background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-radius: 16px; border: 2px solid #fbbf24;">
+                  <div style="font-size: 2.2rem; font-weight: 800; color: #92400e; margin-bottom: 0.5rem; line-height: 1;">3</div>
+                  <div style="font-size: 0.85rem; color: #92400e; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;">Negozi Brianza</div>
+                </div>
+                <div style="text-align: center; padding: 1.25rem; background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-radius: 16px; border: 2px solid #fbbf24;">
+                  <div style="font-size: 2.2rem; font-weight: 800; color: #92400e; margin-bottom: 0.5rem; line-height: 1;">85%</div>
+                  <div style="font-size: 0.85rem; color: #92400e; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;">5 Stelle</div>
+                </div>
+              </div>
+
+            </div>
+
           </div>
         </section>
 
@@ -2738,6 +2928,60 @@
                 mock.style.transform = 'perspective(1200px) rotateY(-10deg) rotateX(4deg)';
             });
         }
+    </script>
+
+    <!-- Schema.org JSON-LD per SEO Recensioni -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Oak - Rivenditore Vodafone Monza Brianza",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.3",
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingCount": "1023"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Franci"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          },
+          "reviewBody": "Grazie alla signorina Valeria dell'aiuto. Mio marito ha stipulato un contratto business super vantaggioso e spiegato nei minimi dettagli."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Saverio Potenza"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          },
+          "reviewBody": "Oggi mi sono recato in negozio e sono rimasto davvero colpito dalla professionalità e dalla gentilezza dei ragazzi di questo negozio."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Mattia Costantini"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          },
+          "reviewBody": "Mi sono recato da Vodafone al Gigante di Villasanta al fine di trasferire l'intestazione del mio numero di telefono. Operatori gentili e disponibili!"
+        }
+      ]
+    }
     </script>
 </body>
 </html>
