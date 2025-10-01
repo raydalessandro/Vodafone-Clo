@@ -1937,5 +1937,26 @@
         </div>
       </div>
     </footer>
+
+    <!-- Cookie Banner GDPR -->
+    <div id="cookie" style="position:fixed;inset:auto 16px 16px 16px;background:#111;color:#fff;padding:14px 16px;border-radius:12px;display:none;z-index:9999">
+        Usiamo cookie tecnici e di misurazione anonima. <a href="cookie.html" style="color:#ffb199">Dettagli</a>.
+        <button id="okCookie" class="btn btn-primary" style="margin-left:12px">OK</button>
+    </div>
+
+    <script>
+        // Cookie banner GDPR
+        (function(){
+            const k = "cookieConsent2025";
+            if(!localStorage.getItem(k)){
+                const b = document.getElementById('cookie');
+                b.style.display = 'block';
+                document.getElementById('okCookie').onclick = function(){
+                    localStorage.setItem(k,"1");
+                    b.remove();
+                }
+            }
+        })();
+    </script>
 </body>
                           </html>
