@@ -1559,10 +1559,8 @@
         if(mobileMenu) {
             mobileMenu.querySelectorAll('a').forEach(function(a){
                 a.addEventListener('click', function(){
-                    // Chiudi il menu solo per link interni
-                    if(this.getAttribute('href').startsWith('#')){
-                        toggleMenu(false);
-                    }
+                    // Chiudi il menu per tutti i link
+                    toggleMenu(false);
                 });
             });
         }
