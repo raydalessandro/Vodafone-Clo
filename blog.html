@@ -437,7 +437,6 @@
       color:#e60000;
       background-size: 80% 2px;
       background-color:rgba(230,0,0,0.1);
-      transform:translateY(-1px);
     }
 
     /* Mobile menu (IDENTICO) */
@@ -927,29 +926,35 @@
         <stop offset="100%" stop-color="#ff3333"/>
       </linearGradient>
       <linearGradient id="crownGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#ffd700"/>
-        <stop offset="100%" stop-color="#ffed4e"/>
+        <stop offset="0%" stop-color="#fbbf24"/>
+        <stop offset="50%" stop-color="#f59e0b"/>
+        <stop offset="100%" stop-color="#fbbf24"/>
       </linearGradient>
     </defs>
     
-    <!-- Tronco dell'albero -->
-    <rect x="28" y="35" width="4" height="20" fill="url(#trunkGradient)" rx="2"/>
+    <!-- Radici -->
+    <path stroke="#8b4513" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6" 
+          d="M30 50c-3-2-5-3-8-2 M30 50c3-2 5-3 8-2"/>
     
-    <!-- Chioma dell'albero -->
-    <circle cx="30" cy="32" r="12" fill="url(#canopyGradient)"/>
+    <!-- Tronco -->
+    <rect fill="url(#trunkGradient)" x="26.5" y="38" width="7" height="12" rx="2"/>
     
-    <!-- Corona di Monza -->
-    <path d="M20 25 L22 20 L25 22 L28 18 L31 22 L34 20 L36 25 L35 28 L25 28 Z" fill="url(#crownGradient)" stroke="#fff" stroke-width="1"/>
+    <!-- Chioma centrale -->
+    <ellipse fill="url(#canopyGradient)" cx="30" cy="23" rx="11" ry="12"/>
     
-    <!-- Dettagli della corona -->
-    <circle cx="25" cy="23" r="1" fill="#fff"/>
-    <circle cx="30" cy="21" r="1" fill="#fff"/>
-    <circle cx="35" cy="23" r="1" fill="#fff"/>
+    <!-- Chiome laterali -->
+    <ellipse fill="url(#canopyGradient)" cx="21" cy="28" rx="7" ry="9" opacity="0.9"/>
+    <ellipse fill="url(#canopyGradient)" cx="39" cy="28" rx="7" ry="9" opacity="0.9"/>
     
-    <!-- Piccoli dettagli -->
-    <circle fill="#e60000" opacity="0.9" cx="25" cy="30" r="1.3"/>
-    <circle fill="#e60000" opacity="0.9" cx="30" cy="28" r="1.3"/>
-    <circle fill="#e60000" opacity="0.9" cx="35" cy="30" r="1.3"/>
+    <!-- Corona Ferrea di Monza -->
+    <path fill="url(#crownGradient)" d="M30 8l2.5 5h-5l2.5-5z"/>
+    <path fill="url(#crownGradient)" d="M24.5 13l2 4h-4l2-4z"/>
+    <path fill="url(#crownGradient)" d="M35.5 13l2 4h-4l2-4z"/>
+    <path fill="url(#crownGradient)" d="M21 17h18l-1.5 2.5h-15L21 17z"/>
+    
+    <!-- Stelle di connessione -->
+    <circle fill="#e60000" opacity="0.9" cx="17" cy="20" r="1.3"/>
+    <circle fill="#e60000" opacity="0.9" cx="43" cy="20" r="1.3"/>
     <circle fill="#e60000" opacity="0.9" cx="30" cy="36" r="1.3"/>
   </svg>
   
