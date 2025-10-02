@@ -117,3 +117,38 @@ if (matchMedia('(pointer:fine)').matches && mock){
         mock.style.transform = 'perspective(1200px) rotateY(-10deg) rotateX(4deg)';
     });
 }
+
+// Filter functionality (solo per pagina smartphone)
+const filterBtns = document.querySelectorAll('.filter-btn');
+const phoneCards = document.querySelectorAll('.phone-card[data-category]');
+
+if (filterBtns.length > 0 && phoneCards.length > 0) {
+    filterBtns.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            // Remove active class from all buttons
+            filterBtns.forEach(function(b) {
+                b.classList.remove('active');
+            });
+            
+            // Add active class to clicked button
+            this.classList.add('active');
+            
+            // Get filter value
+            const filter = this.getAttribute('data-filter');
+            
+            // Show/hide cards based on filter
+            phoneCards.forEach(function(card) {
+                if (filter === 'all' || filter === 'promo') {
+                    card.style.display = '';
+                } else {
+                    const category = card.getAttribute('data-category');
+                    if (category === filter) {
+                        card.style.display = '';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }
+            });
+        });
+    });
+}
