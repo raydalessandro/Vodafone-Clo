@@ -322,14 +322,18 @@
       grid-column: span 4;
     }
     
+    .grid-4 > *{
+      grid-column: span 3;
+    }
+    
     @media (max-width:1024px){
-      .grid-3 > *{
+      .grid-3 > *, .grid-4 > *{
         grid-column: span 6;
       }
     }
     
     @media (max-width:640px){
-      .grid-3 > *{
+      .grid-3 > *, .grid-4 > *{
         grid-column: span 12;
       }
     }
@@ -1128,6 +1132,47 @@
       margin:0 auto;
     }
 
+    /* Page Stats */
+    .page-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+      max-width: 600px;
+    }
+
+    .stat-item {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      background: rgba(255,255,255,0.8);
+      border: 1px solid var(--light-gray);
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,.08);
+      transition: all 0.3s ease;
+    }
+
+    .stat-item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(230,0,0,.12);
+      border-color: rgba(230,0,0,.3);
+    }
+
+    .stat-number {
+      display: block;
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--brand);
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-label {
+      font-size: 0.9rem;
+      color: var(--muted);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
     /* Marquee */
     .marquee{
       -webkit-overflow-scrolling:touch;
@@ -1719,6 +1764,19 @@
         padding:0.8rem 16px;
         gap:1rem;
       }
+
+      .page-stats {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+      }
+
+      .stat-item {
+        padding: 1.2rem 0.8rem;
+      }
+
+      .stat-number {
+        font-size: 1.4rem;
+      }
       .logo{
         font-size:1.5rem;
       }
@@ -2143,29 +2201,6 @@
   color: white;
 }
 
-/* Grid Layouts */
-.grid-3 > * {
-  grid-column: span 4;
-}
-
-.grid-4 > * {
-  grid-column: span 3;
-}
-
-@media (max-width: 1024px) {
-  .grid-3 > * {
-    grid-column: span 6;
-  }
-  .grid-4 > * {
-    grid-column: span 6;
-  }
-}
-
-@media (max-width: 768px) {
-  .grid-3 > *,
-  .grid-4 > * {
-    grid-column: span 12;
-  }
   
   .phone-card {
     max-width: 100%;
@@ -2183,4 +2218,3 @@
     padding: 6px 12px;
     font-size: 0.85rem;
   }
-}
